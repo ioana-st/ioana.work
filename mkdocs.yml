@@ -1,5 +1,7 @@
 site_name: ioana @ work - a technical writing portfolio
-site_url: https://ioana.work
+site_url: https://ioana.work/
+repo_url: https://github.com/ioana-st/ioana.work
+use_directory_urls: true
 theme:
   name: material
   palette:
