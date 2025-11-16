@@ -1,0 +1,17 @@
+name: Link Checker
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  lychee:
+    name: Check for Broken Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2.7.0
