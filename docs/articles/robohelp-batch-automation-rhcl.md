@@ -20,7 +20,7 @@ For what I need at work, these parameters are enough. If you want, you can also 
 
 My batch looks something like this:
 
-![Webhelp Settings - Exclude PDF](/assets/article-images/batch_example.png)
+![Webhelp Settings - Exclude PDF](../assets/article-images/batch_example.png)
 
 ## Tips &amp; tricks/Troubleshooting
 * If your command lines start with `rhcl`, the `.bat` file needs to be saved in the same folder as `rhcl.exe`. If, instead of simply `rhcl`, you use the absolute path to the executable (for example `C:\Program Files (x86)\Adobe\Adobe RoboHelp 2015\RoboHTML\rhcl.exe`), you can save the `.bat` file anywhere on your hard drive.

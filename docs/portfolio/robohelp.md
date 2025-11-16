@@ -15,7 +15,7 @@ To start working with RoboHelp, you need to either open an existing project or c
 
 You can open or create a project from the **Starter** screen or from the **File** menu.
 
-![RoboHelp open project screen](assets/portfolio-images/robohelp/open_project.png)
+![RoboHelp open project screen](../assets/portfolio-images/robohelp/open_project.png)
 
 ---
 
@@ -40,7 +40,7 @@ This output can then be published (copied) to a website, an internal shared driv
 
 ### About the Interface
 
-![RoboHelp main interface components](assets/portfolio-images/robohelp/interface.png)
+![RoboHelp main interface components](../assets/portfolio-images/robohelp/interface.png)
 
 The image above explains the most commonly used components.
 
@@ -60,8 +60,8 @@ Topics are HTML pages that make up the online help system - topics are essential
 
 | Action | Screenshot | Result |
 | :--- | :--- | :--- |
-| Right-click a folder in the **Project Manager** and select **New > Topic**.<br/><br/>!!! quote "Recommended Way"  This is the recommended way. | ![New Topic from Project Manager](assets/portfolio-images/robohelp/new_proj_manager.png) | The topic is created in the folder you selected.<br/>![Topic created in Project Manager](assets/portfolio-images/robohelp/new_proj_manager_created.png) |
-| Right-click a book in the **TOC** and select **New > Topic**. | ![New Topic from TOC](assets/portfolio-images/robohelp/new_toc.png) | The topic is created in the root folder.<br/>![Topic created from TOC](assets/portfolio-images/robohelp/new_toc_created.png) |
+| Right-click a folder in the **Project Manager** and select **New > Topic**.<br/><br/>!!! quote "Recommended Way"  This is the recommended way. | ![New Topic from Project Manager](../assets/portfolio-images/robohelp/new_proj_manager.png) | The topic is created in the folder you selected.<br/>![Topic created in Project Manager](../assets/portfolio-images/robohelp/new_proj_manager_created.png) |
+| Right-click a book in the **TOC** and select **New > Topic**. | ![New Topic from TOC](../assets/portfolio-images/robohelp/new_toc.png) | The topic is created in the root folder.<br/>![Topic created from TOC](../assets/portfolio-images/robohelp/new_toc_created.png) |
 
 When you create a new topic, you need to fill in the details in the **New Topic** window. You generally only need to write the **Topic Title**. This name will be automatically added as a Heading 1 at the top of the topic, and it will also be displayed in the **Project Manager**.
 
@@ -70,7 +70,7 @@ The **File Name** is the name under which the topic is saved to your HDD and it 
 !!! danger "File Naming Convention"
     Do not use any special characters (`&`, `–`, `—`, `(`, `)` etc) in the **File Name** field. The **Topic Title** can use them, but make sure you replace them with **`_`** in the **File Name** if RoboHelp does not do it automatically.
 
-![New Topic window fields](assets/portfolio-images/robohelp/new_topic.png)
+![New Topic window fields](../assets/portfolio-images/robohelp/new_topic.png)
 
 ---
 
@@ -78,7 +78,7 @@ The **File Name** is the name under which the topic is saved to your HDD and it 
 
 After you have created a topic, you can change its properties by right-clicking it in the **Project Manager**. This opens a window identical to the **New Topic** window.
 
-![Topic Properties window](assets/portfolio-images/robohelp/topic_properties.png)
+![Topic Properties window](../assets/portfolio-images/robohelp/topic_properties.png)
 
 ---
 
@@ -91,11 +91,11 @@ To delete a topic, right-click it in the **Project Manager** and select **Delete
 
 To check topic links, right-click the topic (in the **Project Manager** or **TOC**) and select **Show > Topic Links**. This displays the topics that link to the current topic and the topics that the current topics links to.
 
-![Topic Links window](assets/portfolio-images/robohelp/topic_links.png)
+![Topic Links window](../assets/portfolio-images/robohelp/topic_links.png)
 
 To check topic references, right-click the topic (in the **Project Manager** or **TOC**) and select **Show > Topic References**. This displays all the above links, plus the references in the TOC or Index.
 
-![Topic References window](assets/portfolio-images/robohelp/topic_references.png)
+![Topic References window](../assets/portfolio-images/robohelp/topic_references.png)
 
 ---
 
@@ -103,7 +103,7 @@ To check topic references, right-click the topic (in the **Project Manager** or 
 
 To add a topic to the table of contents, simply drag it from the **Project Manager** into the **TOC** pod.
 
-![Drag and drop to add topic to TOC](assets/portfolio-images/robohelp/add_to_toc.png)
+![Drag and drop to add topic to TOC](../assets/portfolio-images/robohelp/add_to_toc.png)
 
 ---
 
@@ -113,12 +113,12 @@ You can edit topics in **Design Mode** or in **HTML Mode**.
 
 | Mode | Screenshot |
 | :--- | :--- |
-| **Design Mode** offers a WYSIWYG editor that uses common formatting shortcuts (CTRL + B, etc) | ![Design Mode interface](assets/portfolio-images/robohelp/design_mode.png) |
-| **HTML Mode** lets you edit the source of the file directly. | ![HTML Mode interface](assets/portfolio-images/robohelp/html_mode.png) |
+| **Design Mode** offers a WYSIWYG editor that uses common formatting shortcuts (CTRL + B, etc) | ![Design Mode interface](../assets/portfolio-images/robohelp/design_mode.png) |
+| **HTML Mode** lets you edit the source of the file directly. | ![HTML Mode interface](../assets/portfolio-images/robohelp/html_mode.png) |
 
 Each topic has to be associated with a stylesheet that is defined at the project level. If your new topic does not pick up the correct stylesheet automatically, you can add it yourself from the **Edit** ribbon tab.
 
-![Adding a stylesheet](assets/portfolio-images/robohelp/add_stylesheet.png)
+![Adding a stylesheet](../assets/portfolio-images/robohelp/add_stylesheet.png)
 
 ---
 
@@ -129,7 +129,7 @@ Most formatting commands can be found on the **Edit** ribbon tab.
 !!! danger "Formatting Rules"
     **Never** use inline formatting except for bold, italic, bullets and numbering. All other formatting needs to be applied using one of the styles that are predefined in the CSS.
 
-    ![Predefined styles in RoboHelp](assets/portfolio-images/robohelp/predefined_styles.png)
+    ![Predefined styles in RoboHelp](../assets/portfolio-images/robohelp/predefined_styles.png)
 
     **Never** paste content from Word or from other applications that include text formatting! If you need to paste text, pass it through Notepad or similar first. You can also download the free utility [PureText](http://stevemiller.net/puretext/).
 
@@ -139,7 +139,7 @@ Most formatting commands can be found on the **Edit** ribbon tab.
 
 Dropdowns are RoboHelp-specific elements that allow you to "hide" content until you click the dropdown.
 
-![Example of a dropdown in output](assets/portfolio-images/robohelp/dropdown.png)
+![Example of a dropdown in output](../assets/portfolio-images/robohelp/dropdown.png)
 
 To insert a drop down, follow these steps:
 
@@ -193,7 +193,7 @@ Single source layouts (SSLs) allow you to generate various types of output start
 
 SSLs are managed in the **Outputs (SSL)** pod.
 
-![Outputs (SSL) pod](assets/portfolio-images/robohelp/ssl.png)
+![Outputs (SSL) pod](../assets/portfolio-images/robohelp/ssl.png)
 
 You can rename your outputs or keep the default names (but this is usually standardized at the product team level, so don't go changing things without asking first).
 
@@ -236,7 +236,7 @@ To apply a tag to an element, simply select it, right-click, select **Apply Cond
 
 You can also drag the tags from the **Conditional Build Tags** pod to the selected text or to a topic/page.
 
-![Applying CBT using the context menu](assets/portfolio-images/robohelp/apply_cbt.png)
+![Applying CBT using the context menu](../assets/portfolio-images/robohelp/apply_cbt.png)
 
 ---
 
@@ -244,7 +244,7 @@ You can also drag the tags from the **Conditional Build Tags** pod to the select
 
 If you want to see what your output would look like if you excluded a specific conditional build tag, you can preview the topic by clicking **View Item** on the **Project** ribbon tab and then changing the **Conditional Build Tag Expression**.
 
-![Previewing CBT with expression field](assets/portfolio-images/robohelp/view_cbt.png)
+![Previewing CBT with expression field](../assets/portfolio-images/robohelp/view_cbt.png)
 
 ---
 
@@ -258,7 +258,7 @@ When generating an output for a RoboHelp project, conditional build tags are gro
 
 To remove a conditional build tag from an element, select the element, right-click it, select **Apply Conditional Build Tag**, then click the applied conditional build tag to remove it.
 
-![Removing CBT by unchecking it](assets/portfolio-images/robohelp/remove_cbt.png)
+![Removing CBT by unchecking it](../assets/portfolio-images/robohelp/remove_cbt.png)
 
 ---
 
@@ -266,20 +266,20 @@ To remove a conditional build tag from an element, select the element, right-cli
 
 CBT are managed in the **Conditional Build Tags** pod.
 
-![Conditional Build Tags pod](assets/portfolio-images/robohelp/cbt_pod.png)
+![Conditional Build Tags pod](../assets/portfolio-images/robohelp/cbt_pod.png)
 
 In this pod, you can create and delete tags, and view tag properties. All these options are available in the context menu.
 
 !!! danger "Deleting CBT"
     If you delete a conditional build tag, it is removed from all the places it had been applied, therefore you must be careful - **never** delete a tag before checking if it is in use! To do this, right-click the tag and select **Properties**.
 
-    ![CBT Properties window showing usage](assets/portfolio-images/robohelp/cbt_properties.png)
+    ![CBT Properties window showing usage](../assets/portfolio-images/robohelp/cbt_properties.png)
 
 ---
 
 ### Example - Printed Documentation
 
-![Topic with links tagged for online output](assets/portfolio-images/robohelp/online_cbt.png)
+![Topic with links tagged for online output](../assets/portfolio-images/robohelp/online_cbt.png)
 
 In this topic, we have tagged the links in the topic with the **Online** CBT. This way, we can leave the links visible in the WebHelp output, but we can hide them from the PDF output.
 
@@ -379,7 +379,7 @@ To delete a variable, select it in the **User Defined Variables** pod and click 
 To create a new RoboHelp project:
 
 1.  Open RoboHelp 2015 and click **Blank Project**.
-    ![Blank Project option on Starter screen](assets/portfolio-images/robohelp/blank_project.png)
+    ![Blank Project option on Starter screen](../assets/portfolio-images/robohelp/blank_project.png)
 2.  On the **New Project Wizard** window, enter the title, file name and location of the new project to be created.
 3.  Click **Finish**.
 4.  Copy the CSS file from one of the existing RH projects.
@@ -396,7 +396,7 @@ Merged projects are added and organized using the **Table of Contents** pod, jus
 
 The screenshot below is an example of a master project that contains 4 topics and several merged projects.
 
-![Master project TOC with merged projects](assets/portfolio-images/robohelp/master.png)
+![Master project TOC with merged projects](../assets/portfolio-images/robohelp/master.png)
 
 ---
 
@@ -426,4 +426,4 @@ If you have a project defined with merged projects, the following structure is g
 
 This diagram shows the structure of a master with empty child projects.
 
-![Merged project structure diagram](assets/portfolio-images/robohelp/master_structure.png)
+![Merged project structure diagram](../assets/portfolio-images/robohelp/master_structure.png)

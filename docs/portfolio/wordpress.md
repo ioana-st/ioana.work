@@ -8,7 +8,7 @@
 3. To see what the published page or post would look like (but without actually making it available for site visitors), click **Preview**.  
 4. When you are done, click **Publish**. By default, pages and posts are set up to show up on the site right away. 
 
-![add page](assets/portfolio-images/wordpress/image4.png)
+![add page](../assets/portfolio-images/wordpress/image4.png)
 
 ---
 ### How to add media
@@ -17,14 +17,14 @@
 2. Select a file on your computer and click **Open**. The file is uploaded.
 
 You can add various types of media (images, videos, audio files etc) and you can filter on each type by using the tabs at the top. You can also change the size of the thumbnails by dragging on the circle on the right side.  
-![add media](assets/portfolio-images/wordpress/image21.png)
+![add media](../assets/portfolio-images/wordpress/image21.png)
 
 ---
 ### How to modify a page
 
 1. On the Wordpress toolbar, in the **Manage** section, click **Site Pages**.  
 2. By default, the published pages are displayed. To see other types of pages (such as drafts), click the corresponding tab on the top part.  
-   ![types of pages](assets/portfolio-images/wordpress/image13.png) 
+   ![types of pages](../assets/portfolio-images/wordpress/image13.png) 
 3. Click the page you want to modify. The page is loaded.  
 4. Make the required changes. To learn how to write and organize the content, see *How to work with the post and page editor*.  
 5. Click **Update**.
@@ -45,16 +45,16 @@ If you want to hide a page or post that is already published, but you don’t wa
 
 1. Open the post or page you want to hide.  
 2. On the top right, click **Switch to draft**.  
-   ![switch to draft](assets/portfolio-images/wordpress/image8.png)
+   ![switch to draft](../assets/portfolio-images/wordpress/image8.png)
 
 ---
 ### How to delete a page or post  
 
 1. On the Wordpress toolbar, in the **Manage** section, click either **Site Pages** or **Blog Posts**.  
 2. On the row of the page or post you want to delete, click the icon with three dots and select **Trash**. The page or post is moved to the **Trashed** category. It is not deleted, but it no longer shows up as published or draft.
-   ![trash](assets/portfolio-images/wordpress/image11.png)  
+   ![trash](../assets/portfolio-images/wordpress/image11.png)  
 3. If you want to delete something permanently, go to the **Trashed** tab, select the item and click **Delete**.  
-   ![delete](assets/portfolio-images/wordpress/image9.png)
+   ![delete](../assets/portfolio-images/wordpress/image9.png)
 
 ---
 ### How to schedule a page or blog post to be posted at a certain date 
@@ -68,7 +68,7 @@ You can set up a page or post to be published automatically at some predefined p
 4. Select the date and time when you want your post to be published.  
 5. Click **Publish**. The page or post will automatically appear on the website when you reach the defined date and time.
 
-![scheduled post](assets/portfolio-images/wordpress/image14.png)
+![scheduled post](../assets/portfolio-images/wordpress/image14.png)
 
 ---
 ### How to change the order of blog posts
@@ -81,7 +81,7 @@ For example, if you have Post 1 that was published on January 15 and Post 2 that
 3. In the calendar, choose a different date (January 12).  
 4. Click **Update**. The date and therefore the order of the posts is now changed.
 
-![change post date](assets/portfolio-images/wordpress/image6.png)
+![change post date](../assets/portfolio-images/wordpress/image6.png)
 
 ---
 ### How to work with the post and page editor
@@ -90,7 +90,7 @@ The text editor in Wordpress is based on blocks. A block is just a snippet of co
 
 This image shows two paragraph blocks. The mouse is hovering over the second one, so it’s highlighted in blue. The symbol highlighted in yellow allows you to reposition the block. When you click inside a block, the formatting toolbar is shown (in the red frame). This toolbar displays different options depending on the type of block.
 
-![wordpress editor](assets/portfolio-images/wordpress/image20.png)
+![wordpress editor](../assets/portfolio-images/wordpress/image20.png)
 
 You can add all types of content to a page or post.
 
@@ -110,25 +110,25 @@ You can add more complex types of content in two ways:
    * A **\+** sign (highlighted in yellow in the image) \- you can click it and select the type of the block from a list.  
    * Three symbols (highlighted in orange in the image) \- they are not always the same; if one matches what you need, you can click it to directly add that block.
 
-![add block](assets/portfolio-images/wordpress/image15.png)
+![add block](../assets/portfolio-images/wordpress/image15.png)
 
 2. After you have added the new block, the toolbar is specific to that type block and enables you to change the formatting and so on.
 
 **To add a block by transforming (list example):**
 
 1. Write each list item on a new line.  
-   ![add block transform](assets/portfolio-images/wordpress/image16.png)  
+   ![add block transform](../assets/portfolio-images/wordpress/image16.png)  
 2. Select all the lines. (Click inside the first one, hold the mouse and drag down to the last one.)  
-   ![add block select](assets/portfolio-images/wordpress/image12.png)  
+   ![add block select](../assets/portfolio-images/wordpress/image12.png)  
 3. In the toolbar that appears at the top, click the first button. (It is a paragraph symbol that changes to two arrows when you hold your mouse over it.)  
 4. Select **List**. The selected blocks are transformed into a list.  
-   ![convert block to list](assets/portfolio-images/wordpress/image3.png)
+   ![convert block to list](../assets/portfolio-images/wordpress/image3.png)
 
 **To delete a block:**
 
 1. Click inside the block you want to delete.  
 2. On the formatting toolbar, click the last button (the one with 3 dots) and click **Remove Block**.  
-   ![remove block](assets/portfolio-images/wordpress/image1.png)
+   ![remove block](../assets/portfolio-images/wordpress/image1.png)
 
 ## Customizing the theme
 
@@ -143,7 +143,7 @@ All the steps are performed in the Customizer. To open it, click **Customize** o
 3. Select an existing image or upload a new one. The image should be square, but if it is not, Wordpress will allow you to crop it so that it fits correctly.  
 4. Click **Publish**.
 
-![change favicon](assets/portfolio-images/wordpress/image16.png)
+![change favicon](../assets/portfolio-images/wordpress/image16.png)
 
 ---
 ### How to change the site name and description
@@ -152,7 +152,7 @@ All the steps are performed in the Customizer. To open it, click **Customize** o
 2. Enter the text you want for **Site Title** and **Tagline**.  
 3. Click **Publish**.
 
-![change site identity](assets/portfolio-images/wordpress/image7.png)
+![change site identity](../assets/portfolio-images/wordpress/image7.png)
 
 ---
 ### How to change the header image
@@ -160,21 +160,21 @@ All the steps are performed in the Customizer. To open it, click **Customize** o
 1. In the Customizer, click **Header Media**.  
 2. Click **Add new image** to upload a new header or select from the previously uploaded ones.
 
-![change header](assets/portfolio-images/wordpress/image18.png)
+![change header](../assets/portfolio-images/wordpress/image18.png)
 
 ---
 ### How to change the main menu structure
 
 1. In the Customizer, click **Menus**.  
 2. Click the menu that displays **Currently set to: Header Menu**. The structure displayed here indicates how the site menus look like.  
-   ![current menu structure](assets/portfolio-images/wordpress/image19.png)  
+   ![current menu structure](../assets/portfolio-images/wordpress/image19.png)  
 3. To add a new item to the menu, click **Add items**, then select an item (page, post, etc) from the list that opens.   
 4. To remove an item from the menu, click the red X next to it.  
 5. When you are done, click **Add items** again.  
 6. To change the order of the items in the menus, drag and drop them in the required place. You can create menus with multiple levels by adding items as children of other items.  
    **Note**: You can also reorganize the menus by clicking **Reorder** and using the displayed arrows.  
 7. If you don’t want the name in the menu to be the same as the name of the page or post, click the arrow next to the menu item and change the **Navigation Label**.  
-   ![rename menu item](assets/portfolio-images/wordpress/image5.png)
+   ![rename menu item](../assets/portfolio-images/wordpress/image5.png)
 
 ---
 ### How to change the content on the main page
@@ -182,7 +182,7 @@ All the steps are performed in the Customizer. To open it, click **Customize** o
 1. In the **Customizer**, click **Theme Options**, then click **Front Page**.  
 2. For each section, select an existing page you want to display.
 
-![change main page](assets/portfolio-images/wordpress/image2.png)
+![change main page](../assets/portfolio-images/wordpress/image2.png)
 
 ## BONUS: How the site is set up now
 

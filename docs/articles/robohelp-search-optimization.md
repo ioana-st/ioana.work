@@ -18,14 +18,14 @@ Because content changes are more difficult to implement in the short term, I sta
 ### Attempt no. 1: No PDF and Word searches
 Because each module has a PDF version that contains the same stuff as the online help, I first excluded all such documents from the search.
 
-![Webhelp Settings - Exclude PDF](/assets/article-images/optimize_search_exclude.png)
+![Webhelp Settings - Exclude PDF](../assets/article-images/optimize_search_exclude.png)
 
 **Result**: no performance improvement. (But I still think it was a good idea, because we are avoiding duplicate content in the searches.)
 
 ### Attempt no. 2: Search on all terms by default
 Because RoboHelp 2015 has a new option for this, I enabled "AND" search by default in all modules.
 
-![Webhelp Settings - Enable AND Search by default](/assets/article-images/optimize_search_and.png)
+![Webhelp Settings - Enable AND Search by default](../assets/article-images/optimize_search_and.png)
 
 **Result**: no performance improvement (but I wasn't expecting one anyway). I don't know why we had to wait so many years for such an obvious setting, but better late than never, I guess. Now the search should be working like everybody probably imagined it was working already.
 
@@ -33,18 +33,18 @@ Because RoboHelp 2015 has a new option for this, I enabled "AND" search by defau
 Yeah, it's not really intuitive, after all we are publishing to the internet. Well, apparently the option kept its name from the dial-up days...
 Some background first: to enable the search functionality, RoboHelp generates some files (with names like `package__n__xml.js`) in the folder `whxdata`. Every search loads every one of these files... so the more files, the more requests to the server and the slower everything runs. Here is where our option comes in: when the output is optimized for internet, RoboHelp generates more, smaller `package` files (because this was more efficient in the old days, I guess); when the output is optimized for a local network, RoboHelp generates fewer, larger `package` files.
 
-![Webhelp Settings - Optimize for LAN](/assets/article-images/optimize_lan.png)
+![Webhelp Settings - Optimize for LAN](../assets/article-images/optimize_lan.png)
 
 So... I started comparing, after I generated the entire help system with each of the options:
 
 * A search in Windows for the `package*.js` string, in the entire help system: the LAN-optimized version has 6 times fewer `package` files.
-![Comparing packages](/assets/article-images/optimize_compare_package.png)
+![Comparing packages](../assets/article-images/optimize_compare_package.png)
 
 * A comparison at the merged project level: the LAN-optimized version has 6 times fewer files in the `whxdata` folder and there are 2 `package` files instead of 41.
-![Comparing folders](/assets/article-images/optimize_compare_folder.png)
+![Comparing folders](../assets/article-images/optimize_compare_folder.png)
 
 * A comparison in Chrome Developer Tools: in the LAN-optimized version there are 190 requests, compared to 275 in the internet-optimized version.
-![Comparing requests](/assets/article-images/optimize_compare_requests.png)
+![Comparing requests](../assets/article-images/optimize_compare_requests.png)
 
 The questions (for which I don't yet have clear answers):
 

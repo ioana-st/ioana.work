@@ -5,7 +5,7 @@ _Published: 2018-07-14_
 
 After a rebranding, the names of the two products we documented changed, so we had to update the properties of a few hundred Word documents. In our case, the product name is saved as a custom property. We also wanted to update the titles of the documents, by concatenating several document properties.
 
-![Word Document Properties](/assets/article-images/document_properties.png)
+![Word Document Properties](../assets/article-images/document_properties.png)
 
 This VBA macro processes all the files in a given folder and, for each of them, updates the product name (based on the old one) and then sets the title to `[Product Name] [Version] [Module]` (for example, `New Product Name 7.2 Cache Servers`).
 

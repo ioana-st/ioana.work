@@ -19,6 +19,6 @@ First, check if all the CBT applied to the text/topics actually appear in the **
   
   * If the expression is not correct, fix it and regenerate the output.
   
-* If tags are missing, follow the steps in [Troubleshooting Missing Variables and Conditional Tags](/articles/robohelp-troubleshooting-missing-variables-cbt).
+* If tags are missing, follow the steps in [Troubleshooting Missing Variables and Conditional Tags](../articles/robohelp-troubleshooting-missing-variables-cbt.md).
 
 Second (if you are having problems with entire topics), make sure that you applied the conditional tag _in the **Project Manager**_. If you only apply the tag in the TOC, the topic will still be generated and will show up in searches.
