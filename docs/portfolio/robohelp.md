@@ -1,3 +1,13 @@
+---
+title: RoboHelp Introduction
+---
+
+> **Context**: Onboarding for junior writers.
+
+> **Purpose**: Allow the writers to start using RoboHelp.
+
+> **Audience**: Juniors with no prior knowledge of help authoring tools.
+
 ## What is RoboHelp?
 
 RoboHelp is a **help authoring tool** used to generate output in various formats from one source (this is called **single sourcing**).
@@ -158,7 +168,7 @@ To insert a drop down, follow these steps:
 
 The table of contents defines the structure of the content (the way it is displayed in the online help output). The TOC is structured into books and pages. Each page is essentially a link to a topic that exists in the project.
 
-![TOC structure diagram](image2015-9-10 15:41:28.png)
+![TOC structure diagram](../assets/portfolio-images/robohelp/toc.png)
 
 ---
 
@@ -166,7 +176,7 @@ The table of contents defines the structure of the content (the way it is displa
 
 You can edit the properties of a topic (though you usually don't need to) by right-clicking it and selecting **Properties**.
 
-![TOC Page Properties window](image2015-9-10 15:34:13.png)
+![TOC Page Properties window](../assets/portfolio-images/robohelp/toc_topic_properties.png)
 
 * The **Page Title** indicates the text that is displayed in the TOC of the generated online help.
 * The **Page Destination** section allows you to change the destination of the page (but you generally shouldn't do this).
@@ -178,7 +188,7 @@ You can edit the properties of a topic (though you usually don't need to) by rig
 
 The properties for a book are similar:
 
-![TOC Book Properties window](2015-10-15_14-22-06.png)
+![TOC Book Properties window](../assets/portfolio-images/robohelp/toc_book_properties.png)
 
 The **Book with Link** setting indicates what happens when you click a book in the generated output:
 

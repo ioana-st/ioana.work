@@ -4,24 +4,33 @@ hide:
    - toc
 ---
 
-# General
+# Internal Documentation
 <div class="grid cards" markdown>
 
 -   ## 📡 Making Requests with Postman
 
-    Internal documentation explaining how to use Postman to run a report using one of the company's APIs. Written for coworkers with no prior Postman experience.
+    Internal documentation explaining how to use Postman to run a report using one of the company's APIs.
 
     [:octicons-arrow-right-24: **Link**](portfolio/postman.md)
 
 </div>
 
+<div class="grid cards" markdown>
 
-# Doc Tools
+-   ## 🐋 Deploying Servers with Docker
+
+    Internal documentation explaining how to deploy the company's servers with Docker. 
+
+    [:octicons-arrow-right-24: **Link**](portfolio/docker.md)
+
+</div>
+
+# Onboarding
 <div class="grid cards" markdown>
 
 -   ## <> HTML & CSS Tutorial
 
-    An introduction to HTML and CSS that I wrote for junior technical writers who had to do light HTML editing in RoboHelp.
+    Onboarding documentation on the basics of HTML and CSS.
 
     [:octicons-arrow-right-24: **Link**](portfolio/html-css-tutorial.md)
 
@@ -31,7 +40,7 @@ hide:
 
 -   ## ⚙️ RoboHelp Introduction
 
-    A tutorial for RoboHelp Classic, used as onboarding for new technical writers joining the team without prior exposure to RoboHelp. 
+    Onboarding documentation for using RoboHelp Classic. 
 
     [:octicons-arrow-right-24: **Link**](portfolio/robohelp.md)
 
@@ -43,7 +52,7 @@ hide:
 
 -   ## 🎹 WordPress Maintenance
 
-    Documentation for the WordPress back-end of [MariaRadutu.com](https://www.mariaradutu.com/), a pianist's personal website. I set up the site and documented it so that the artist could update it herself.
+    Documentation for the WordPress back-end of a personal website.
 
     [:octicons-arrow-right-24: **Link**](portfolio/wordpress.md)
 
@@ -54,7 +63,7 @@ hide:
 
 -   ## 📝 Copy Editing
 
-    Copy edits for [IQON](https://www.iqondesign.com/), an interior design company. The original materials were written by non-native English speaker. 
+    Copy edits for an interior design company. 
 
     [:octicons-arrow-right-24: **Link**](portfolio/editing.md)
 

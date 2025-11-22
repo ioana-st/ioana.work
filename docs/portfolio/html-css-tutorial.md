@@ -1,7 +1,13 @@
 ---
 title: Introduction to HTML and CSS
-toc: true
 ---
+
+> **Context**: Onboarding for junior writers.
+
+> **Purpose**: Allow the writers to make minor edits in HTML mode in RoboHelp.
+
+> **Audience**: Juniors with no prior knowledge of HTML and CSS.
+
 ## What Are HTML and CSS?
 
 HTML (Hyper Text Markup Language) is a markup language for creating web pages.
@@ -156,12 +162,12 @@ Six levels of headings can be used in HTML - from `<h1>` to `<h6>`. Heading 1 is
 **HTML:**
 
 ```html
-<h1>My heading</h1>
+<h2>My heading 2</h2>
 ```
 
 **Output:**
 
-<h1>My Heading</h1>
+<h2>My Heading 2</h2>
 
 ---
 

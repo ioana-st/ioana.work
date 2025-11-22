@@ -1,3 +1,13 @@
+---
+title: WordPress Maintenance
+---
+
+> **Context**: Concert pianist who had a [personal website](https://www.mariaradutu.com/) and wanted to be more hands-on rather than relying on her team to make updates.
+
+> **Purpose**: Allow the artist to understand the back-end structure and update the website herself.
+
+> **Audience**: Non-technical person, who had not used WordPress before.
+
 ## Pages and Posts
 
 ---

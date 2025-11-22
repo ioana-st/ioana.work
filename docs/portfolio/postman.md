@@ -1,6 +1,12 @@
 ---
-title: Running Requests with Postman
+title: Making Requests with Postman
 ---
+
+> **Context**: QA needing to validate a new process before the user interface was developed.
+
+> **Purpose**: Help team members configure Postman for our internal environment and make the required API calls.
+
+> **Audience**: Non-technical people without prior knowledge of API/Postman.
 
 ## Prerequisites
 
