@@ -1,5 +1,6 @@
+🌐 View the live portfolio at [ioana.work](https://ioana.work/).
+
 Created with [MkDocs](https://www.mkdocs.org/) and [Material](https://squidfunk.github.io/mkdocs-material/). 
 
-[How I built the site](https://ioana.work/meta-build-site).
+[Meta documentation: How I built the site](https://ioana.work/portfolio/meta-build-site/).
 
-🌐 Live website at [ioana.work](https://ioana.work/).
