@@ -93,9 +93,10 @@ I decided to convert everything to Python Markdown. The bulk of the conversion w
 The old site had a blog section, but I do not expect to post regularly, so I just converted the blog posts into standalone articles and I replaced the blog structure with a simple table with dates.
 ## GitHub actions
 
+The site is automatically built and pushed to the `gh-pages` branch at every commit through a GitHub action that runs `mkdocs gh-deploy`. GitHub then runs its default action to publish the `gh-pages` branch.
+
 No site is complete without a link checker, so I added a GitHub action that runs [Lychee](https://github.com/lycheeverse/lychee) at every commit.
 
-The site is automatically deployed at every commit through a GitHub default action.
 
 ## Lessons learned
 
