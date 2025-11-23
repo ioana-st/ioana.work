@@ -1,0 +1,7 @@
+.md-content h1{
+  color: var(--md-accent-fg-color);
+}
+
+.md-content h2 {
+  color: var(--md-primary-fg-color);
+}

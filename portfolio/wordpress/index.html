@@ -1,0 +1,983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ioana.work/portfolio/wordpress/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>WordPress Maintenance - ioana @ work - a technical writing portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pages-and-posts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-header__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ioana @ work - a technical writing portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WordPress Maintenance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-nav__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    ioana @ work - a technical writing portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portfolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pages-and-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pages and Posts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pages and Posts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add-a-page-or-blog-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to add a page or blog post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to add media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-modify-a-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to modify a page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-modify-the-content-of-a-blog-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to modify the content of a blog post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-hide-an-already-published-page-or-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to hide an already-published page or post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-delete-a-page-or-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to delete a page or post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-schedule-a-page-or-blog-post-to-be-posted-at-a-certain-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to schedule a page or blog post to be posted at a certain date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-the-order-of-blog-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to change the order of blog posts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-work-with-the-post-and-page-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to work with the post and page editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customizing the theme
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing the theme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-the-favicon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to change the favicon
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-the-site-name-and-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to change the site name and description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-the-header-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to change the header image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-the-main-menu-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to change the main menu structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-the-content-on-the-main-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to change the content on the main page
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-how-the-site-is-set-up-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BONUS: How the site is set up now
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BONUS: How the site is set up now">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Home Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#news-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        News Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bio-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bio Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concerts-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concerts Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#albums-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Albums Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contact Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>WordPress Maintenance</h1>
+
+<blockquote>
+<p><strong>Context</strong>: Concert pianist who had a <a href="https://www.mariaradutu.com/">personal website</a> and wanted to be more hands-on rather than relying on her team to make updates.</p>
+<p><strong>Purpose</strong>: Allow the artist to understand the back-end structure and update the website herself.</p>
+<p><strong>Audience</strong>: Non-technical person, who had not used WordPress before.</p>
+</blockquote>
+<h2 id="pages-and-posts">Pages and Posts<a class="headerlink" href="#pages-and-posts" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="how-to-add-a-page-or-blog-post">How to add a page or blog post<a class="headerlink" href="#how-to-add-a-page-or-blog-post" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the Wordpress toolbar, in the <strong>Manage</strong> section, next to <strong>Site Pages</strong> or <strong>Blog Posts</strong>, click <strong>Add</strong>. A blank page or post opens.  </li>
+<li>Write the title and the content. To learn how to write and organize the content, see <em>How to work with the post and page editor</em>.  </li>
+<li>To see what the published page or post would look like (but without actually making it available for site visitors), click <strong>Preview</strong>.  </li>
+<li>When you are done, click <strong>Publish</strong>. By default, pages and posts are set up to show up on the site right away. </li>
+</ol>
+<p><img alt="add page" src="../../assets/portfolio-images/wordpress/image4.png" /></p>
+<hr />
+<h3 id="how-to-add-media">How to add media<a class="headerlink" href="#how-to-add-media" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the Wordpress toolbar, in the <strong>Manage</strong> section, next to <strong>Media</strong>, click <strong>Add</strong>.  </li>
+<li>Select a file on your computer and click <strong>Open</strong>. The file is uploaded.</li>
+</ol>
+<p>You can add various types of media (images, videos, audio files etc) and you can filter on each type by using the tabs at the top. You can also change the size of the thumbnails by dragging on the circle on the right side.<br />
+<img alt="add media" src="../../assets/portfolio-images/wordpress/image21.png" /></p>
+<hr />
+<h3 id="how-to-modify-a-page">How to modify a page<a class="headerlink" href="#how-to-modify-a-page" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the Wordpress toolbar, in the <strong>Manage</strong> section, click <strong>Site Pages</strong>.  </li>
+<li>By default, the published pages are displayed. To see other types of pages (such as drafts), click the corresponding tab on the top part.<br />
+<img alt="types of pages" src="../../assets/portfolio-images/wordpress/image13.png" /> </li>
+<li>Click the page you want to modify. The page is loaded.  </li>
+<li>Make the required changes. To learn how to write and organize the content, see <em>How to work with the post and page editor</em>.  </li>
+<li>Click <strong>Update</strong>.</li>
+</ol>
+<hr />
+<h3 id="how-to-modify-the-content-of-a-blog-post">How to modify the content of a blog post<a class="headerlink" href="#how-to-modify-the-content-of-a-blog-post" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the Wordpress toolbar, in the <strong>Manage</strong> section, click <strong>Blog Posts</strong>.  </li>
+<li>By default, only the published posts written by you are displayed. To see the other posts, click the corresponding option on the top part. You can filter based on the status of the post and you can also change between viewing only posts written by you and posts written by everyone.  </li>
+<li>Click the post you want to modify. The post is loaded.  </li>
+<li>Make the required changes. To learn how to write and organize the content, see <em>How to work with the post and page editor</em>.  </li>
+<li>Click <strong>Update</strong>.</li>
+</ol>
+<hr />
+<h3 id="how-to-hide-an-already-published-page-or-post">How to hide an already-published page or post<a class="headerlink" href="#how-to-hide-an-already-published-page-or-post" title="Permanent link">&para;</a></h3>
+<p>If you want to hide a page or post that is already published, but you don’t want to delete it, you can set it to draft. This way, site visitors won’t be able to see it anymore, but you can publish it again later without having to rewrite it from scratch.</p>
+<ol>
+<li>Open the post or page you want to hide.  </li>
+<li>On the top right, click <strong>Switch to draft</strong>.<br />
+<img alt="switch to draft" src="../../assets/portfolio-images/wordpress/image8.png" /></li>
+</ol>
+<hr />
+<h3 id="how-to-delete-a-page-or-post">How to delete a page or post<a class="headerlink" href="#how-to-delete-a-page-or-post" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the Wordpress toolbar, in the <strong>Manage</strong> section, click either <strong>Site Pages</strong> or <strong>Blog Posts</strong>.  </li>
+<li>On the row of the page or post you want to delete, click the icon with three dots and select <strong>Trash</strong>. The page or post is moved to the <strong>Trashed</strong> category. It is not deleted, but it no longer shows up as published or draft.
+   <img alt="trash" src="../../assets/portfolio-images/wordpress/image11.png" />  </li>
+<li>If you want to delete something permanently, go to the <strong>Trashed</strong> tab, select the item and click <strong>Delete</strong>.<br />
+<img alt="delete" src="../../assets/portfolio-images/wordpress/image9.png" /></li>
+</ol>
+<hr />
+<h3 id="how-to-schedule-a-page-or-blog-post-to-be-posted-at-a-certain-date">How to schedule a page or blog post to be posted at a certain date<a class="headerlink" href="#how-to-schedule-a-page-or-blog-post-to-be-posted-at-a-certain-date" title="Permanent link">&para;</a></h3>
+<p>You can set up a page or post to be published automatically at some predefined point in the future.</p>
+<ol>
+<li>Create a new page or post as described in <em>How to add a page or blog post</em>.  </li>
+<li>On the right side, make sure you are on the <strong>Document</strong> tab.  </li>
+<li>Next to <strong>Publish</strong>, click <strong>Immediately</strong>.<br />
+<strong>Note</strong>: If the post was already scheduled to be published at a certain date, you see the date instead of <strong>Immediately</strong>.  </li>
+<li>Select the date and time when you want your post to be published.  </li>
+<li>Click <strong>Publish</strong>. The page or post will automatically appear on the website when you reach the defined date and time.</li>
+</ol>
+<p><img alt="scheduled post" src="../../assets/portfolio-images/wordpress/image14.png" /></p>
+<hr />
+<h3 id="how-to-change-the-order-of-blog-posts">How to change the order of blog posts<a class="headerlink" href="#how-to-change-the-order-of-blog-posts" title="Permanent link">&para;</a></h3>
+<p>The blog posts are always displayed in chronological order (the most recent one is shown first). If you want to change the order, you need to change the dates.<br />
+For example, if you have Post 1 that was published on January 15 and Post 2 that was published on January 13, then Post 1 is displayed on top. To reverse the order, you need to change the date of at least one of the posts, such as making Post 1 published on January 12 (before Post 2).</p>
+<ol>
+<li>Open the post you want to change the date for.  </li>
+<li>Next to <strong>Publish</strong>, click the existing date (January 15).  </li>
+<li>In the calendar, choose a different date (January 12).  </li>
+<li>Click <strong>Update</strong>. The date and therefore the order of the posts is now changed.</li>
+</ol>
+<p><img alt="change post date" src="../../assets/portfolio-images/wordpress/image6.png" /></p>
+<hr />
+<h3 id="how-to-work-with-the-post-and-page-editor">How to work with the post and page editor<a class="headerlink" href="#how-to-work-with-the-post-and-page-editor" title="Permanent link">&para;</a></h3>
+<p>The text editor in Wordpress is based on blocks. A block is just a snippet of content and makes it easier to arrange the bits and pieces of your pages and posts. You can arrange the blocks by hovering the mouse over them and dragging the symbol that appears on the left.</p>
+<p>This image shows two paragraph blocks. The mouse is hovering over the second one, so it’s highlighted in blue. The symbol highlighted in yellow allows you to reposition the block. When you click inside a block, the formatting toolbar is shown (in the red frame). This toolbar displays different options depending on the type of block.</p>
+<p><img alt="wordpress editor" src="../../assets/portfolio-images/wordpress/image20.png" /></p>
+<p>You can add all types of content to a page or post.</p>
+<p><strong>To add plain text:</strong></p>
+<ol>
+<li>Write the text. Every time you press enter, a new block is created automatically, but it’s nothing you need to think about. The output will still look like regular text.  </li>
+<li>Change the look and feel by using the buttons on the formatting toolbar.</li>
+</ol>
+<p>You can add more complex types of content in two ways: </p>
+<ul>
+<li>by directly adding the required type of content   </li>
+<li>by transforming from one type to another</li>
+</ul>
+<p><strong>To add a block directly:</strong></p>
+<ol>
+<li>Click inside an empty block or hover the mouse over the top of an empty/populated block. Two types of symbols are displayed:  </li>
+<li>A <strong>+</strong> sign (highlighted in yellow in the image) - you can click it and select the type of the block from a list.  </li>
+<li>Three symbols (highlighted in orange in the image) - they are not always the same; if one matches what you need, you can click it to directly add that block.</li>
+</ol>
+<p><img alt="add block" src="../../assets/portfolio-images/wordpress/image15.png" /></p>
+<ol>
+<li>After you have added the new block, the toolbar is specific to that type block and enables you to change the formatting and so on.</li>
+</ol>
+<p><strong>To add a block by transforming (list example):</strong></p>
+<ol>
+<li>Write each list item on a new line.<br />
+<img alt="add block transform" src="../../assets/portfolio-images/wordpress/image16.png" />  </li>
+<li>Select all the lines. (Click inside the first one, hold the mouse and drag down to the last one.)<br />
+<img alt="add block select" src="../../assets/portfolio-images/wordpress/image12.png" />  </li>
+<li>In the toolbar that appears at the top, click the first button. (It is a paragraph symbol that changes to two arrows when you hold your mouse over it.)  </li>
+<li>Select <strong>List</strong>. The selected blocks are transformed into a list.<br />
+<img alt="convert block to list" src="../../assets/portfolio-images/wordpress/image3.png" /></li>
+</ol>
+<p><strong>To delete a block:</strong></p>
+<ol>
+<li>Click inside the block you want to delete.  </li>
+<li>On the formatting toolbar, click the last button (the one with 3 dots) and click <strong>Remove Block</strong>.<br />
+<img alt="remove block" src="../../assets/portfolio-images/wordpress/image1.png" /></li>
+</ol>
+<h2 id="customizing-the-theme">Customizing the theme<a class="headerlink" href="#customizing-the-theme" title="Permanent link">&para;</a></h2>
+<p>This part is specific to each theme. The steps below are applicable to the <a href="https://audiotheme.com/view/ovation/"><strong>Ovation</strong></a> theme.<br />
+All the steps are performed in the Customizer. To open it, click <strong>Customize</strong> on the Wordpress toolbar.</p>
+<hr />
+<h3 id="how-to-change-the-favicon">How to change the favicon<a class="headerlink" href="#how-to-change-the-favicon" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the Customizer, click <strong>Site Identity</strong>.  </li>
+<li>Under <strong>Site Icon</strong>, click <strong>Change Image</strong>.  </li>
+<li>Select an existing image or upload a new one. The image should be square, but if it is not, Wordpress will allow you to crop it so that it fits correctly.  </li>
+<li>Click <strong>Publish</strong>.</li>
+</ol>
+<p><img alt="change favicon" src="../../assets/portfolio-images/wordpress/image16.png" /></p>
+<hr />
+<h3 id="how-to-change-the-site-name-and-description">How to change the site name and description<a class="headerlink" href="#how-to-change-the-site-name-and-description" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the Customizer, click <strong>Site Identity</strong>.  </li>
+<li>Enter the text you want for <strong>Site Title</strong> and <strong>Tagline</strong>.  </li>
+<li>Click <strong>Publish</strong>.</li>
+</ol>
+<p><img alt="change site identity" src="../../assets/portfolio-images/wordpress/image7.png" /></p>
+<hr />
+<h3 id="how-to-change-the-header-image">How to change the header image<a class="headerlink" href="#how-to-change-the-header-image" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the Customizer, click <strong>Header Media</strong>.  </li>
+<li>Click <strong>Add new image</strong> to upload a new header or select from the previously uploaded ones.</li>
+</ol>
+<p><img alt="change header" src="../../assets/portfolio-images/wordpress/image18.png" /></p>
+<hr />
+<h3 id="how-to-change-the-main-menu-structure">How to change the main menu structure<a class="headerlink" href="#how-to-change-the-main-menu-structure" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the Customizer, click <strong>Menus</strong>.  </li>
+<li>Click the menu that displays <strong>Currently set to: Header Menu</strong>. The structure displayed here indicates how the site menus look like.<br />
+<img alt="current menu structure" src="../../assets/portfolio-images/wordpress/image19.png" />  </li>
+<li>To add a new item to the menu, click <strong>Add items</strong>, then select an item (page, post, etc) from the list that opens.   </li>
+<li>To remove an item from the menu, click the red X next to it.  </li>
+<li>When you are done, click <strong>Add items</strong> again.  </li>
+<li>To change the order of the items in the menus, drag and drop them in the required place. You can create menus with multiple levels by adding items as children of other items.<br />
+<strong>Note</strong>: You can also reorganize the menus by clicking <strong>Reorder</strong> and using the displayed arrows.  </li>
+<li>If you don’t want the name in the menu to be the same as the name of the page or post, click the arrow next to the menu item and change the <strong>Navigation Label</strong>.<br />
+<img alt="rename menu item" src="../../assets/portfolio-images/wordpress/image5.png" /></li>
+</ol>
+<hr />
+<h3 id="how-to-change-the-content-on-the-main-page">How to change the content on the main page<a class="headerlink" href="#how-to-change-the-content-on-the-main-page" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the <strong>Customizer</strong>, click <strong>Theme Options</strong>, then click <strong>Front Page</strong>.  </li>
+<li>For each section, select an existing page you want to display.</li>
+</ol>
+<p><img alt="change main page" src="../../assets/portfolio-images/wordpress/image2.png" /></p>
+<h2 id="bonus-how-the-site-is-set-up-now">BONUS: How the site is set up now<a class="headerlink" href="#bonus-how-the-site-is-set-up-now" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="home-page">Home Page<a class="headerlink" href="#home-page" title="Permanent link">&para;</a></h3>
+<p><strong>About</strong> section:</p>
+<ul>
+<li>Page location: Site Pages &gt; <strong>About</strong>  </li>
+<li>The page contains one block with type Quote.  </li>
+<li>Added to homepage through Customizer &gt; <strong>Homepage Settings &gt; Homepage</strong></li>
+</ul>
+<p><strong>Concerts</strong> section:</p>
+<ul>
+<li>Page location: Site Pages &gt; <strong>Concerts</strong> (not CONCERTS)  </li>
+<li>The page contains several reusable blocks and a link. Basically, there are two pages with concert info:  </li>
+<li>One with the full concert schedule (CONCERTS), that is displayed in the top menu.  </li>
+<li>One with the first three upcoming concerts (Concerts), that is displayed on the home page and links to the page with the full schedule.</li>
+</ul>
+<p>Because the blocks are reusable, it means that if you edit their content in one of the pages, they are updated automatically in the other page as well.</p>
+<p><strong><em>If you add or remove a concert, you need to edit both pages.</em></strong> If you just change the details of an existing concert, you only need to make the changes in one place.</p>
+<ul>
+<li>The page has a featured image, that is displayed as you scroll through the front page.  </li>
+<li>Added to homepage through Customizer &gt; <strong>Theme Options &gt; Front Page &gt; Section 1 Content</strong></li>
+</ul>
+<p><strong>News</strong> section:</p>
+<ul>
+<li>Page location: Site Pages &gt; <strong>News</strong>  </li>
+<li>The page doesn’t contain anything. It doesn’t matter, because it’s just a placeholder for the blog posts. Due to this setup, all blog posts will appear on the front page.  </li>
+<li>As far as I can tell, you can’t configure the number of posts to appear on the first page - there will always be 3.  </li>
+<li>The page has a featured image, that is displayed as you scroll through the front page.  </li>
+<li>Added to homepage through:  </li>
+<li>First, in Customizer &gt; <strong>Homepage Settings &gt; Post Page</strong> is set to News  </li>
+<li>Second, in Customizer &gt; <strong>Theme Options &gt; Front Page &gt; Section 2 Content</strong></li>
+</ul>
+<p><strong>Albums</strong> section:</p>
+<ul>
+<li>Page location: Site Pages &gt; <strong>Albums</strong>  </li>
+<li>The page doesn’t contain anything. It doesn’t matter, because it’s just meant to be a parent to the actual album pages.  </li>
+<li>Under <strong>Page Attributes</strong>, the <strong>Template</strong> is <strong>Record Archive</strong>.  </li>
+<li>As far as I can tell, you can’t configure the number of albums to appear on the first page - there will always be 3.  </li>
+<li>The page has a featured image, that is displayed as you scroll through the front page.  </li>
+<li>Added to homepage through Customizer &gt; <strong>Theme Options &gt; Front Page &gt; Section 3 Content</strong></li>
+</ul>
+<p>Each album page is configured as follows:</p>
+<ul>
+<li><strong>Page title</strong> - the name of the album. This is displayed on the front page, under the album cover, and on the album page, above the album details.  </li>
+<li><strong>Page contents</strong> - the description of the album and the Spotify playlist. The layout is done with columns. The Spotify playlist is created automatically when you paste the Spotify album link. This is displayed only on the album page, below the cover and description.  </li>
+<li><strong>Page featured image</strong> - the album cover. This is displayed on the front page and the album page.  </li>
+<li><strong>Page excerpt</strong> - the album details and links. This is written directly in HTML and is displayed only on the album page, next to the cover.  </li>
+<li><strong>Page parent</strong> - has to be <strong>Albums</strong>  </li>
+<li><strong>Page attributes - template</strong> - has to be <strong>Record Archive</strong></li>
+</ul>
+<p><strong>Contact</strong> section:</p>
+<ul>
+<li>Page location: Site Pages &gt; <strong>Contact</strong>  </li>
+<li>The page contains the contact information and a contact form.  </li>
+<li>Added to homepage through Customizer &gt; <strong>Theme Options &gt; Front Page &gt; Section 4 Content</strong></li>
+</ul>
+<hr />
+<h3 id="news-page">News Page<a class="headerlink" href="#news-page" title="Permanent link">&para;</a></h3>
+<p>When you click <strong>News</strong> in the menu at the top, you are taken to the blog posts archive. To see them all, go to Wordpress toolbar &gt; <strong>Blog Posts</strong>.<br />
+However, the items in the menu were added <em>manually</em> - therefore, if you create a new blog post, it will show up on the front page, but not in the menu. If you want it in the menu as well, you need to add from the Customizer (see <em>How to change the main menu structure</em>).<br />
+![][assets/portfolio-images/wordpress/image21]<br />
+The <strong>Archive</strong> link at the end is a page (Site Pages &gt; <strong>Archive</strong>). The page is empty, but configured up with <strong>Page Attributes &gt; Template</strong> set to <strong>Grid Page</strong>.<br />
+Each of the archive projects is set up as a separate page configured as follows:</p>
+<ul>
+<li><strong>Page parent</strong> - has to be <strong>Archive</strong>   </li>
+<li><strong>Page featured image</strong> - displayed on the home page and the page itself</li>
+</ul>
+<hr />
+<h3 id="bio-page">Bio Page<a class="headerlink" href="#bio-page" title="Permanent link">&para;</a></h3>
+<p>Configured similarly to the <strong>News</strong> page:</p>
+<ul>
+<li>The <strong>Bio</strong> page itself is configured with the template set to <strong>Grid Page</strong>.  </li>
+<li>The <strong>Vita English</strong>, <strong>Vita German</strong> and <strong>Press Reviews</strong> pages each have a featured image and have the parent page set to <strong>Bio</strong>.</li>
+</ul>
+<hr />
+<h3 id="concerts-page">Concerts Page<a class="headerlink" href="#concerts-page" title="Permanent link">&para;</a></h3>
+<p>This is a single page, located in Site Pages &gt; <strong>CONCERTS</strong> (in upper case). It’s the full list of the upcoming concerts, as explained for the <strong>Concerts</strong> section of the home page.</p>
+<hr />
+<h3 id="albums-page">Albums Page<a class="headerlink" href="#albums-page" title="Permanent link">&para;</a></h3>
+<p>This is a single page, located in Site Pages &gt; <strong>Albums</strong>. It’s the same page that is displayed on the home page.</p>
+<hr />
+<h3 id="media-page">Media Page<a class="headerlink" href="#media-page" title="Permanent link">&para;</a></h3>
+<p>The <strong>Media</strong> section of the site is made out of two layers of child pages. When you click <strong>Media</strong> in the menu, your are first taken to a page (Site Pages &gt; <strong>Media</strong>) that links to <strong>Images</strong> and <strong>Videos</strong>. The <strong>Images</strong> page links to three categories of images, while the <strong>Videos</strong> page links to each video page.<br />
+The pages are configured as follows:</p>
+<ul>
+<li><strong>Media</strong> - no content, template set to <strong>Grid Page</strong>  </li>
+<li><strong>Images</strong> - no content, template set to <strong>Grid Page</strong> and parent set to <strong>Media</strong>  </li>
+<li><strong>Image</strong>, <strong>In Concert</strong> and <strong>Maria &amp; Friends</strong> - template set to <strong>Full-Width</strong> Page, a gallery block with the images themselves, and parent set to <strong>Images</strong>  </li>
+<li><strong>Videos</strong> - no content, template set to <strong>Video Archive</strong> and parent set to <strong>Media</strong>  </li>
+<li><strong>Each video page</strong> - the embedded YouTube video, a featured image chosen (this is displayed on the <strong>Videos</strong> pages), template set to <strong>Video Archive</strong> and parent set to <strong>Videos</strong></li>
+</ul>
+<hr />
+<h3 id="contact-page">Contact Page<a class="headerlink" href="#contact-page" title="Permanent link">&para;</a></h3>
+<p>This is a single page, located in Site Pages &gt; <strong>Contact</strong>. It’s the same page that is displayed on the home page.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.wrap", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

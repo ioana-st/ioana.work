@@ -1,0 +1,1234 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ioana.work/portfolio/robohelp/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>RoboHelp Introduction - ioana @ work - a technical writing portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-robohelp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-header__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ioana @ work - a technical writing portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RoboHelp Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-nav__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    ioana @ work - a technical writing portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portfolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-robohelp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is RoboHelp?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#about-rh-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About RH Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-the-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About the Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Topics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Topic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-topic-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Topic Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Topic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-topic-to-the-toc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a Topic to the TOC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-content-to-a-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Content to a Topic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatting-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatting Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdowns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dropdowns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of Contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#topic-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Topic Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layouts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generating-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generating Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-build-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditional Build Tags
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Build Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applying-conditional-build-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Applying Conditional Build Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-conditionalized-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Previewing Conditionalized Text
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditional Expressions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-conditional-build-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing Conditional Build Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-conditional-build-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Conditional Build Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-printed-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example - Printed Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defining Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-variable-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a Variable Set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-variable-values-in-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defining Variable Values in Sets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserting-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserting Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-in-topic-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables in Topic Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-in-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables in Titles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generating-output-with-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generating Output with Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single Projects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merged-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merged Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merged Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-merged-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Merged Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merged-projects-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merged Projects Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>RoboHelp Introduction</h1>
+
+<blockquote>
+<p><strong>Context</strong>: Onboarding for junior writers.</p>
+<p><strong>Purpose</strong>: Allow the writers to start using RoboHelp.</p>
+<p><strong>Audience</strong>: Juniors with no prior knowledge of help authoring tools.</p>
+</blockquote>
+<h2 id="what-is-robohelp">What is RoboHelp?<a class="headerlink" href="#what-is-robohelp" title="Permanent link">&para;</a></h2>
+<p>RoboHelp is a <strong>help authoring tool</strong> used to generate output in various formats from one source (this is called <strong>single sourcing</strong>).</p>
+<p>In this company we generate <strong>WebHelp</strong>, <strong>Responsive Help</strong>, and <strong>Word</strong> (transformed to <strong>PDF</strong> for final delivery). This tutorial will refer primarily to <strong>WebHelp</strong>, as that is the main deliverable.</p>
+<hr />
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>To start working with RoboHelp, you need to either open an existing project or create a new one.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this company, we work mostly with existing projects.</p>
+</div>
+<p>You can open or create a project from the <strong>Starter</strong> screen or from the <strong>File</strong> menu.</p>
+<p><img alt="RoboHelp open project screen" src="../../assets/portfolio-images/robohelp/open_project.png" /></p>
+<hr />
+<h3 id="about-rh-projects">About RH Projects<a class="headerlink" href="#about-rh-projects" title="Permanent link">&para;</a></h3>
+<p>A basic RoboHelp project - defined as a project that can be used to generate a delivery-ready output - should at least contain the following:</p>
+<ul>
+<li><strong>Topics</strong> - the HTML files drafted by the technical writers.</li>
+<li><strong>Table of contents</strong> - a structure for these topics</li>
+<li><strong>Single source layout (SSL)</strong> - the settings used to generate the output</li>
+</ul>
+<p>A basic workflow for generating a deliverable (output) is:</p>
+<ol>
+<li>Draft the topics.</li>
+<li>Organize them into a table of contents.</li>
+<li>Define the output preferences in an SSL.</li>
+<li>Generate the output.</li>
+</ol>
+<p>This output can then be published (copied) to a website, an internal shared drive, etc.</p>
+<hr />
+<h3 id="about-the-interface">About the Interface<a class="headerlink" href="#about-the-interface" title="Permanent link">&para;</a></h3>
+<p><img alt="RoboHelp main interface components" src="../../assets/portfolio-images/robohelp/interface.png" /></p>
+<p>The image above explains the most commonly used components.</p>
+<p>Other features that are commonly used are:</p>
+<ul>
+<li><strong>Conditional build tags</strong> - "labels" that can be applied to text or images and allow you to selectively output content based on an expression.</li>
+<li><strong>Variables</strong> - small fragments of text that can be defined once and reused throughout the project; variables can be part of a variable set.</li>
+<li><strong>Snippets</strong> - larger fragments of text that can be defined once and reused throughout the project.</li>
+</ul>
+<hr />
+<h2 id="topics">Topics<a class="headerlink" href="#topics" title="Permanent link">&para;</a></h2>
+<h3 id="creating-a-topic">Creating a Topic<a class="headerlink" href="#creating-a-topic" title="Permanent link">&para;</a></h3>
+<p>Topics are HTML pages that make up the online help system - topics are essentially our documentation. You can create topics starting from the <strong>Project Manager</strong> pod or the <strong>TOC</strong> - the differences are described in the table below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Action</th>
+<th style="text-align: left;">Screenshot</th>
+<th style="text-align: left;">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Right-click a folder in the <strong>Project Manager</strong> and select <strong>New &gt; Topic</strong>.<br/><br/>!!! quote "Recommended Way"  This is the recommended way.</td>
+<td style="text-align: left;"><img alt="New Topic from Project Manager" src="../../assets/portfolio-images/robohelp/new_proj_manager.png" /></td>
+<td style="text-align: left;">The topic is created in the folder you selected.<br/><img alt="Topic created in Project Manager" src="../../assets/portfolio-images/robohelp/new_proj_manager_created.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Right-click a book in the <strong>TOC</strong> and select <strong>New &gt; Topic</strong>.</td>
+<td style="text-align: left;"><img alt="New Topic from TOC" src="../../assets/portfolio-images/robohelp/new_toc.png" /></td>
+<td style="text-align: left;">The topic is created in the root folder.<br/><img alt="Topic created from TOC" src="../../assets/portfolio-images/robohelp/new_toc_created.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>When you create a new topic, you need to fill in the details in the <strong>New Topic</strong> window. You generally only need to write the <strong>Topic Title</strong>. This name will be automatically added as a Heading 1 at the top of the topic, and it will also be displayed in the <strong>Project Manager</strong>.</p>
+<p>The <strong>File Name</strong> is the name under which the topic is saved to your HDD and it is created automatically from your topic title. These two names do not have to be identical, but it is good practice to use the same name in both fields.</p>
+<div class="admonition danger">
+<p class="admonition-title">File Naming Convention</p>
+<p>Do not use any special characters (<code>&amp;</code>, <code>–</code>, <code>—</code>, <code>(</code>, <code>)</code> etc) in the <strong>File Name</strong> field. The <strong>Topic Title</strong> can use them, but make sure you replace them with <strong><code>_</code></strong> in the <strong>File Name</strong> if RoboHelp does not do it automatically.</p>
+</div>
+<p><img alt="New Topic window fields" src="../../assets/portfolio-images/robohelp/new_topic.png" /></p>
+<hr />
+<h3 id="editing-topic-properties">Editing Topic Properties<a class="headerlink" href="#editing-topic-properties" title="Permanent link">&para;</a></h3>
+<p>After you have created a topic, you can change its properties by right-clicking it in the <strong>Project Manager</strong>. This opens a window identical to the <strong>New Topic</strong> window.</p>
+<p><img alt="Topic Properties window" src="../../assets/portfolio-images/robohelp/topic_properties.png" /></p>
+<hr />
+<h3 id="deleting-a-topic">Deleting a Topic<a class="headerlink" href="#deleting-a-topic" title="Permanent link">&para;</a></h3>
+<p>To delete a topic, right-click it in the <strong>Project Manager</strong> and select <strong>Delete</strong>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Warning: Deleting Topics</p>
+<p><strong>Never</strong> delete a topic unless you are sure it is not referenced in other topics or the TOC!</p>
+</div>
+<p>To check topic links, right-click the topic (in the <strong>Project Manager</strong> or <strong>TOC</strong>) and select <strong>Show &gt; Topic Links</strong>. This displays the topics that link to the current topic and the topics that the current topics links to.</p>
+<p><img alt="Topic Links window" src="../../assets/portfolio-images/robohelp/topic_links.png" /></p>
+<p>To check topic references, right-click the topic (in the <strong>Project Manager</strong> or <strong>TOC</strong>) and select <strong>Show &gt; Topic References</strong>. This displays all the above links, plus the references in the TOC or Index.</p>
+<p><img alt="Topic References window" src="../../assets/portfolio-images/robohelp/topic_references.png" /></p>
+<hr />
+<h3 id="adding-a-topic-to-the-toc">Adding a Topic to the TOC<a class="headerlink" href="#adding-a-topic-to-the-toc" title="Permanent link">&para;</a></h3>
+<p>To add a topic to the table of contents, simply drag it from the <strong>Project Manager</strong> into the <strong>TOC</strong> pod.</p>
+<p><img alt="Drag and drop to add topic to TOC" src="../../assets/portfolio-images/robohelp/add_to_toc.png" /></p>
+<hr />
+<h3 id="adding-content-to-a-topic">Adding Content to a Topic<a class="headerlink" href="#adding-content-to-a-topic" title="Permanent link">&para;</a></h3>
+<p>You can edit topics in <strong>Design Mode</strong> or in <strong>HTML Mode</strong>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Mode</th>
+<th style="text-align: left;">Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Design Mode</strong> offers a WYSIWYG editor that uses common formatting shortcuts (CTRL + B, etc)</td>
+<td style="text-align: left;"><img alt="Design Mode interface" src="../../assets/portfolio-images/robohelp/design_mode.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HTML Mode</strong> lets you edit the source of the file directly.</td>
+<td style="text-align: left;"><img alt="HTML Mode interface" src="../../assets/portfolio-images/robohelp/html_mode.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Each topic has to be associated with a stylesheet that is defined at the project level. If your new topic does not pick up the correct stylesheet automatically, you can add it yourself from the <strong>Edit</strong> ribbon tab.</p>
+<p><img alt="Adding a stylesheet" src="../../assets/portfolio-images/robohelp/add_stylesheet.png" /></p>
+<hr />
+<h3 id="formatting-content">Formatting Content<a class="headerlink" href="#formatting-content" title="Permanent link">&para;</a></h3>
+<p>Most formatting commands can be found on the <strong>Edit</strong> ribbon tab.</p>
+<div class="admonition danger">
+<p class="admonition-title">Formatting Rules</p>
+<p><strong>Never</strong> use inline formatting except for bold, italic, bullets and numbering. All other formatting needs to be applied using one of the styles that are predefined in the CSS.</p>
+<p><img alt="Predefined styles in RoboHelp" src="../../assets/portfolio-images/robohelp/predefined_styles.png" /></p>
+<p><strong>Never</strong> paste content from Word or from other applications that include text formatting! If you need to paste text, pass it through Notepad or similar first. You can also download the free utility <a href="http://stevemiller.net/puretext/">PureText</a>.</p>
+</div>
+<hr />
+<h3 id="dropdowns">Dropdowns<a class="headerlink" href="#dropdowns" title="Permanent link">&para;</a></h3>
+<p>Dropdowns are RoboHelp-specific elements that allow you to "hide" content until you click the dropdown.</p>
+<p><img alt="Example of a dropdown in output" src="../../assets/portfolio-images/robohelp/dropdown.png" /></p>
+<p>To insert a drop down, follow these steps:</p>
+<ol>
+<li>Write the text that you will apply the dropdown effect to.</li>
+<li>Select the text.</li>
+<li>On the <strong>Insert</strong> tab, click <strong>DropDown text</strong>. The <strong>Dropdown text editor</strong> opens.</li>
+<li>Enter your text or image.</li>
+<li>Click outside the dropdown editor to close it and save the changes.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Expanding Text</p>
+<p>RoboHelp also offers Expanding Text. The principle is the same, except that the image or text is displayed to the left of the "link", on the same line. We do not use these in our documentation.</p>
+</div>
+<hr />
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<p>The table of contents defines the structure of the content (the way it is displayed in the online help output). The TOC is structured into books and pages. Each page is essentially a link to a topic that exists in the project.</p>
+<p><img alt="TOC structure diagram" src="../../assets/portfolio-images/robohelp/toc.png" /></p>
+<hr />
+<h3 id="topic-properties">Topic Properties<a class="headerlink" href="#topic-properties" title="Permanent link">&para;</a></h3>
+<p>You can edit the properties of a topic (though you usually don't need to) by right-clicking it and selecting <strong>Properties</strong>.</p>
+<p><img alt="TOC Page Properties window" src="../../assets/portfolio-images/robohelp/toc_topic_properties.png" /></p>
+<ul>
+<li>The <strong>Page Title</strong> indicates the text that is displayed in the TOC of the generated online help.</li>
+<li>The <strong>Page Destination</strong> section allows you to change the destination of the page (but you generally shouldn't do this).</li>
+<li>The <strong>Link to</strong> field shows the location of the destination file on the disk.</li>
+</ul>
+<hr />
+<h3 id="book-properties">Book Properties<a class="headerlink" href="#book-properties" title="Permanent link">&para;</a></h3>
+<p>The properties for a book are similar:</p>
+<p><img alt="TOC Book Properties window" src="../../assets/portfolio-images/robohelp/toc_book_properties.png" /></p>
+<p>The <strong>Book with Link</strong> setting indicates what happens when you click a book in the generated output:</p>
+<ul>
+<li>If the book is not linked to a topic, clicking it simply expands the next level. This is the recommended setting.</li>
+<li>If the book is linked to a topic, clicking it opens that topic and also expands the next level.</li>
+</ul>
+<hr />
+<h2 id="layouts">Layouts<a class="headerlink" href="#layouts" title="Permanent link">&para;</a></h2>
+<p>Single source layouts (SSLs) allow you to generate various types of output starting from a single source. In this company, we mostly use <strong>WebHelp</strong>, <strong>Printed Documentation</strong>, and <strong>Responsive Help</strong>.</p>
+<p>SSLs are managed in the <strong>Outputs (SSL)</strong> pod.</p>
+<p><img alt="Outputs (SSL) pod" src="../../assets/portfolio-images/robohelp/ssl.png" /></p>
+<p>You can rename your outputs or keep the default names (but this is usually standardized at the product team level, so don't go changing things without asking first).</p>
+<p>The buttons at the top of the pod let you perform various actions like creating a new layout or duplicating an existing one.</p>
+<hr />
+<h3 id="generating-output">Generating Output<a class="headerlink" href="#generating-output" title="Permanent link">&para;</a></h3>
+<p>To generate an output, simply double-click the respective layout and follow the steps of the wizard.</p>
+<div class="admonition note">
+<p class="admonition-title">Standardized Settings</p>
+<p>The settings are usually standardized at the product team level and should be already saved in the SSL.</p>
+</div>
+<hr />
+<h2 id="conditional-build-tags">Conditional Build Tags<a class="headerlink" href="#conditional-build-tags" title="Permanent link">&para;</a></h2>
+<p>Conditional build tags (CBT) are RoboHelp-specific code snippets that allow you to customize one set of source files for multiple audiences or purposes. For example, if you are writing a new topic, but you haven't finished yet, you can use a conditional build tag to make sure that the incomplete content is not published by mistake.</p>
+<p>You can apply CBT to:</p>
+<ul>
+<li>Text</li>
+<li>Topics in the <strong>Project Manager</strong></li>
+<li>Pages in the TOC</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">CBT Application Rules</p>
+<p>If you want to hide a topic from the output, you need to apply the conditional build tag in the <strong>Project Manager</strong>. When you do this, the topic is also hidden from the TOC when the module is generated (but it's still a good idea to also apply the tag to the corresponding TOC page, to make it obvious that the topic is hidden).</p>
+<p>If you apply a tag to the TOC page <em>only</em>, the topic is still generated and can be found via search (and we don't want that).</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Baggage Files</p>
+<p>You can <strong>not</strong> apply CBT to baggage files.</p>
+</div>
+<hr />
+<h3 id="applying-conditional-build-tags">Applying Conditional Build Tags<a class="headerlink" href="#applying-conditional-build-tags" title="Permanent link">&para;</a></h3>
+<p>To apply a tag to an element, simply select it, right-click, select <strong>Apply Conditional Build Tag</strong>, then choose an existing tag or create a new one.</p>
+<p>You can also drag the tags from the <strong>Conditional Build Tags</strong> pod to the selected text or to a topic/page.</p>
+<p><img alt="Applying CBT using the context menu" src="../../assets/portfolio-images/robohelp/apply_cbt.png" /></p>
+<hr />
+<h3 id="previewing-conditionalized-text">Previewing Conditionalized Text<a class="headerlink" href="#previewing-conditionalized-text" title="Permanent link">&para;</a></h3>
+<p>If you want to see what your output would look like if you excluded a specific conditional build tag, you can preview the topic by clicking <strong>View Item</strong> on the <strong>Project</strong> ribbon tab and then changing the <strong>Conditional Build Tag Expression</strong>.</p>
+<p><img alt="Previewing CBT with expression field" src="../../assets/portfolio-images/robohelp/view_cbt.png" /></p>
+<hr />
+<h3 id="conditional-expressions">Conditional Expressions<a class="headerlink" href="#conditional-expressions" title="Permanent link">&para;</a></h3>
+<p>When generating an output for a RoboHelp project, conditional build tags are grouped into expressions to indicate what parts of the content should be published.</p>
+<hr />
+<h3 id="removing-conditional-build-tags">Removing Conditional Build Tags<a class="headerlink" href="#removing-conditional-build-tags" title="Permanent link">&para;</a></h3>
+<p>To remove a conditional build tag from an element, select the element, right-click it, select <strong>Apply Conditional Build Tag</strong>, then click the applied conditional build tag to remove it.</p>
+<p><img alt="Removing CBT by unchecking it" src="../../assets/portfolio-images/robohelp/remove_cbt.png" /></p>
+<hr />
+<h3 id="managing-conditional-build-tags">Managing Conditional Build Tags<a class="headerlink" href="#managing-conditional-build-tags" title="Permanent link">&para;</a></h3>
+<p>CBT are managed in the <strong>Conditional Build Tags</strong> pod.</p>
+<p><img alt="Conditional Build Tags pod" src="../../assets/portfolio-images/robohelp/cbt_pod.png" /></p>
+<p>In this pod, you can create and delete tags, and view tag properties. All these options are available in the context menu.</p>
+<div class="admonition danger">
+<p class="admonition-title">Deleting CBT</p>
+<p>If you delete a conditional build tag, it is removed from all the places it had been applied, therefore you must be careful - <strong>never</strong> delete a tag before checking if it is in use! To do this, right-click the tag and select <strong>Properties</strong>.</p>
+<p><img alt="CBT Properties window showing usage" src="../../assets/portfolio-images/robohelp/cbt_properties.png" /></p>
+</div>
+<hr />
+<h3 id="example-printed-documentation">Example - Printed Documentation<a class="headerlink" href="#example-printed-documentation" title="Permanent link">&para;</a></h3>
+<p><img alt="Topic with links tagged for online output" src="../../assets/portfolio-images/robohelp/online_cbt.png" /></p>
+<p>In this topic, we have tagged the links in the topic with the <strong>Online</strong> CBT. This way, we can leave the links visible in the WebHelp output, but we can hide them from the PDF output.</p>
+<hr />
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<p>In RoboHelp, variables are small bits of text that are defined once and can be reused throughout the module. You can define simple variables or variable sets. Variable sets are collections of variables that have a different value for each variable set.</p>
+<p><strong>Variable example:</strong> product name. If you inserted the product name as a variable and the product name changes, you only need to update the variable and the product name is changed everywhere.</p>
+<p><strong>Variable set example:</strong> product versions. Our two applications have different versioning, but the help is generated from the same source. We use two variable sets: one for the first application (versioning: 4.3.2, 4.3.3, 5.1.2) and one for second one (6.3.2, 6.3.3, 7.1.2). By choosing the appropriate variable set in the SSL, the versions in the outputs are different between the two.</p>
+<hr />
+<h3 id="defining-variables">Defining Variables<a class="headerlink" href="#defining-variables" title="Permanent link">&para;</a></h3>
+<p>Variables and variable sets are defined in the <strong>User Defined Variables</strong> pod.</p>
+<hr />
+<h3 id="creating-a-variable">Creating a Variable<a class="headerlink" href="#creating-a-variable" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the <strong>User Defined Variables</strong> pod, click <strong>Create a New User Defined Variable</strong>. The <strong>New Variable</strong> window is displayed.</li>
+<li>Enter a <strong>Variable Name</strong>. This is used for identification purposes and is not displayed in the output, for example, <code>Product_Name</code>.</li>
+<li>Enter a <strong>Variable Value</strong>. This is the text that is displayed in the output, for example, <code>KaTet</code>.</li>
+<li>Click <strong>OK</strong>. The new variable is displayed in the pod.</li>
+</ol>
+<hr />
+<h3 id="creating-a-variable-set">Creating a Variable Set<a class="headerlink" href="#creating-a-variable-set" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the <strong>User Defined Variables</strong> pod, click <strong>Add/Edit/Delete Variable Set</strong>. The <strong>Variable Set</strong> window is displayed.</li>
+<li>Click <strong>Add</strong>. A new row is added.</li>
+<li>Enter a name for the set and click <strong>OK</strong>. You cannot edit or delete the <strong>Default Variable Set</strong>.</li>
+</ol>
+<hr />
+<h3 id="defining-variable-values-in-sets">Defining Variable Values in Sets<a class="headerlink" href="#defining-variable-values-in-sets" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Define a variable in the usual way.</li>
+<li>Double-click the variable. The <strong>User Defined Variable Properties</strong> window is displayed. The variable value you entered is assigned by default to all variable sets.</li>
+<li>Under <strong>Variable Set</strong>, choose a set and change the value of the variable accordingly. Repeat until the variable is defined correctly for all sets.</li>
+<li>Click <strong>OK</strong>.</li>
+</ol>
+<hr />
+<h3 id="inserting-variables">Inserting Variables<a class="headerlink" href="#inserting-variables" title="Permanent link">&para;</a></h3>
+<p>Variables can be used in topic content, topic titles, and the TOC.</p>
+<hr />
+<h3 id="variables-in-topic-content">Variables in Topic Content<a class="headerlink" href="#variables-in-topic-content" title="Permanent link">&para;</a></h3>
+<p>To insert a variable in a topic, drag the variable from the <strong>User Defined Variables</strong> pod to the desired place in the topic.</p>
+<div class="admonition note">
+<p class="admonition-title">Default Variable Set</p>
+<p>If you are using variable sets, the values for the <strong>Default Variable Set</strong> are displayed in the topics.</p>
+</div>
+<hr />
+<h3 id="variables-in-titles">Variables in Titles<a class="headerlink" href="#variables-in-titles" title="Permanent link">&para;</a></h3>
+<p>To insert a variable in a topic title or TOC entry:</p>
+<ol>
+<li>Right-click the topic, TOC book or TOC page and select <strong>Properties</strong>. The <strong>Properties</strong> window for the respective type of element is displayed.</li>
+<li>Position the cursor at the point where you want to add the variable.</li>
+<li>In the <strong>Variables</strong> drop-down, select the required variable.</li>
+<li>Click <strong>Insert</strong>. The variable is added.</li>
+</ol>
+<hr />
+<h3 id="generating-output-with-variables">Generating Output with Variables<a class="headerlink" href="#generating-output-with-variables" title="Permanent link">&para;</a></h3>
+<p>If you are not using variable sets, you do not need to do anything extra in the SSL.</p>
+<p>If you are using variable sets, make sure you select the correct one in the SSL.</p>
+<hr />
+<h3 id="deleting-variables">Deleting Variables<a class="headerlink" href="#deleting-variables" title="Permanent link">&para;</a></h3>
+<p>To delete a variable, select it in the <strong>User Defined Variables</strong> pod and click <strong>Delete</strong>. The following options are displayed:</p>
+<ul>
+<li><strong>Delete variable and its reference</strong> - completely removes the variable from the module. For example, if you had a variable called <em>KaTet</em> and a line that said <em>" <KaTet> is a Deschain product"</em>, choosing this option would leave <em>" is a Deschain product"</em>.</li>
+<li><strong>Delete only the variable</strong> - deletes the variable from the pod, but leaves references to the variable in the HTML of the respective topics. In the above example, the text would become <em>ERROR: Variable (KaTet) is undefined is a Deschain product.</em></li>
+<li><strong>Delete variable and replace with actual content</strong> - deletes the variable, but replaces it with the variable value (static text) in the topics.</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Checking Variable Usage</p>
+<p>In general, you should not delete variables unless you are sure that they are not used anywhere. To check if a variable is used or not, look at the <strong>Used in Topics</strong> section in its <strong>Properties</strong> window.</p>
+</div>
+<hr />
+<h2 id="single-projects">Single Projects<a class="headerlink" href="#single-projects" title="Permanent link">&para;</a></h2>
+<p>To create a new RoboHelp project:</p>
+<ol>
+<li>Open RoboHelp 2015 and click <strong>Blank Project</strong>.
+    <img alt="Blank Project option on Starter screen" src="../../assets/portfolio-images/robohelp/blank_project.png" /></li>
+<li>On the <strong>New Project Wizard</strong> window, enter the title, file name and location of the new project to be created.</li>
+<li>Click <strong>Finish</strong>.</li>
+<li>Copy the CSS file from one of the existing RH projects.</li>
+<li>Open the folder where you created the new RH project and paste the CSS file.</li>
+<li>Press <strong>CTRL+S</strong> to save all the changes. You can now delete the <strong>First Topic</strong> page and create the pages you need in the <strong>Project Manager</strong> pane.</li>
+</ol>
+<hr />
+<h2 id="merged-projects">Merged Projects<a class="headerlink" href="#merged-projects" title="Permanent link">&para;</a></h2>
+<p>In this company, the most common use of the merged projects functionality is the so-called "<strong>master project</strong>" of the online help system. The main advantage is that, instead of having one large RoboHelp project for the entire help (which would be unwieldy and would probably crash RoboHelp), we can split the documentation by module and simply assemble the modules into one TOC using the master.</p>
+<p>Merged projects are added and organized using the <strong>Table of Contents</strong> pod, just like any topic. You can use merged projects, books and topics together in the same TOC. You can also use merged projects inside other merged projects.</p>
+<p>The screenshot below is an example of a master project that contains 4 topics and several merged projects.</p>
+<p><img alt="Master project TOC with merged projects" src="../../assets/portfolio-images/robohelp/master.png" /></p>
+<hr />
+<h3 id="creating-merged-projects">Creating Merged Projects<a class="headerlink" href="#creating-merged-projects" title="Permanent link">&para;</a></h3>
+<p>To add a new merged project:</p>
+<ol>
+<li>In the <strong>Table of Contents</strong> pod, click <strong>New Merged Project</strong>. The <strong>Merged Project</strong> window is displayed.</li>
+<li>On the <strong>FlashHelp/WebHelp/Multiscreen/Adobe AIR</strong> tab, type the name of the project you want to link (the name of the <strong>.xpj</strong> of that project). You can also browse for the location of the <strong>.xpj</strong>, but it is not required.</li>
+<li>Click <strong>OK</strong>. The merged project is added in the TOC with a specific icon.</li>
+</ol>
+<hr />
+<h3 id="merged-projects-structure">Merged Projects Structure<a class="headerlink" href="#merged-projects-structure" title="Permanent link">&para;</a></h3>
+<p>If you have a project defined with merged projects, the following structure is generated when you build WebHelp:</p>
+<ul>
+<li>all the usual files in the project</li>
+<li>a <strong><code>mergedProjects</code></strong> folder in the root of the project.</li>
+<li>inside the <strong><code>mergedProjects</code></strong> folder, a sub-folder for each merged (child) project, with the name defined in the TOC</li>
+<li>
+<p>inside each sub-folder, two files:</p>
+<ul>
+<li><code>MasterData_xml.js</code></li>
+<li><code>readme.txt</code></li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Merged TOC</p>
+<p>If you use the <strong>Show Merged TOC in Child Project</strong> option in the WebHelp SSL, you should not delete these files, as the <strong>Show</strong> link won't work correctly anymore.</p>
+</div>
+</li>
+</ul>
+<p>This diagram shows the structure of a master with empty child projects.</p>
+<p><img alt="Merged project structure diagram" src="../../assets/portfolio-images/robohelp/master_structure.png" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.wrap", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,989 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ioana.work/portfolio/html-css-tutorial/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Introduction to HTML and CSS - ioana @ work - a technical writing portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-are-html-and-css" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-header__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ioana @ work - a technical writing portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction to HTML and CSS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-nav__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    ioana @ work - a technical writing portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portfolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-html-and-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Are HTML and CSS?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML Syntax
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-tags-and-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML Tags and Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonly-used-html-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commonly-Used HTML Tags
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commonly-Used HTML Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paragraph-and-line-break-p-and-br" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paragraph and Line Break - &lt;p&gt; and &lt;br&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headings-h1-h2-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Headings - &lt;h1&gt;, &lt;h2&gt; etc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#division-section-div" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Division (section) - &lt;div&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span-span" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Span - &lt;span&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists-ol-ul-li" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lists - &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-img" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image - &lt;img&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#address-link-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Address (link) - &lt;a&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-table-th-td-tr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table - &lt;table&gt;, &lt;th&gt;, &lt;td&gt;, &lt;tr&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSS Syntax
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-style-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Style Sheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-style-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Style Sheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Introduction to HTML and CSS</h1>
+
+<blockquote>
+<p><strong>Context</strong>: Onboarding for junior writers.</p>
+<p><strong>Purpose</strong>: Allow the writers to make minor edits in HTML mode in RoboHelp.</p>
+<p><strong>Audience</strong>: Juniors with no prior knowledge of HTML and CSS.</p>
+</blockquote>
+<h2 id="what-are-html-and-css">What Are HTML and CSS?<a class="headerlink" href="#what-are-html-and-css" title="Permanent link">&para;</a></h2>
+<p>HTML (Hyper Text Markup Language) is a markup language for creating web pages.</p>
+<p>CSS (Cascading Style Sheets) is a style sheet language that describes how the HTML elements should look like.</p>
+<p>In the modern approach, HTML describes the structure of a page and CSS describes the look and feel of a page. (You can specify the look and feel directly in HTML as well, but that is not recommended nowadays.)</p>
+<p>You can think of HTML like the plan of a house. This plan tells you that you have 7 rooms, a terrace etc, but it doesn’t tell you what color the walls are. CSS is the interior designer and painter - it says that the walls in the living room should be white and the walls in the hallway should be green.</p>
+<hr />
+<h2 id="html-syntax">HTML Syntax<a class="headerlink" href="#html-syntax" title="Permanent link">&para;</a></h2>
+<p>An HTML document (page) must have a predefined basic structure, otherwise it won't be displayed correctly (or at all).</p>
+<ul>
+<li>It has to start with a <code>doctype</code> declaration - this helps the browser to display the web page correctly.</li>
+<li>It needs to continue with a <code>&lt;html&gt;</code> tag.</li>
+<li>It needs to have a <code>&lt;body</code>&gt; tag after the <code>&lt;html&gt;</code> tag (but not necessarily <em>immediately</em> after).</li>
+<li>It must end with a closing <code>&lt;/body&gt;</code> tag and a closing <code>&lt;/html&gt;</code> tag, in this order.</li>
+</ul>
+<h4 id="example-basic-html-document">Example - basic HTML document<a class="headerlink" href="#example-basic-html-document" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>A heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>A paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>The web page displays the contents of the <code>&lt;body&gt;</code> tag - this is where you put the documentation. You can see a visual representation <a href="https://www.w3schools.com/html/html_intro.asp">in this page</a>.</p>
+<hr />
+<h3 id="html-tags-and-elements">HTML Tags and Elements<a class="headerlink" href="#html-tags-and-elements" title="Permanent link">&para;</a></h3>
+<p>HTML <strong>tags</strong> are element names surrounded by angle brackets:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">tagname</span><span class="p">&gt;</span>blah blah<span class="p">&lt;/</span><span class="nt">tagname</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Most HTML tags come in pairs: a start (opening) tag and an end (closing) tag. Both use the same element name, but the end tag has an extra forward slash. Some elements (for example, the line break - <code>&lt;br&gt;</code>) only have a start tag, because do not contain anything. These are called empty elements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In RoboHelp, the line break tag is always closed (<code>&lt;br/&gt;</code>). RoboHelp uses XHTML, which is basically a form of HTML with a stricter structure. For more information about XHTML, see the <a href="https://www.w3schools.com/html/html_xhtml.asp">W3Schools page</a>.</p>
+</div>
+<p>An HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">tagname</span><span class="p">&gt;</span>blah blah<span class="p">&lt;/</span><span class="nt">tagname</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>The order of the elements inside the <code>&lt;body&gt;</code> tag is mostly up to you. You can nest elements (aka include an element inside another). By default, all the elements in the page contents are nested inside the <code>&lt;body&gt;</code> tag.</p>
+<p>There are some limitations - some elements cannot be nested inside others (for example, a paragraph cannot contain a heading) - but other than that, the sky is the limit.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Again, as RoboHelp is based on XHTML, the structure is more strict than pure HTML. In practice, you probably won't have to worry about this, because RoboHelp does most of the work for you. (When you use the Author mode, RoboHelp inserts the tags correctly in the first place; when you use HTML mode, RoboHelp tries to correct them for you, if needed.)</p>
+</div>
+<hr />
+<h3 id="html-attributes">HTML Attributes<a class="headerlink" href="#html-attributes" title="Permanent link">&para;</a></h3>
+<p>Attributes provide additional information about the element they are associated to - for example, the style of a paragraph. Attributes are always specified in the start tag and have the format <code>attribute_name="attribute_value"</code>. </p>
+<p>In a tag, this will look like: 
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">tag</span> <span class="na">attribute_name:</span><span class="err">&quot;</span><span class="na">attribute_value</span><span class="err">&quot;</span><span class="p">&gt;</span>blah<span class="p">&lt;/</span><span class="nt">tag</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:red&quot;</span><span class="p">&gt;</span>This is a red paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="commonly-used-html-tags">Commonly-Used HTML Tags<a class="headerlink" href="#commonly-used-html-tags" title="Permanent link">&para;</a></h2>
+<p>This page describes the HTML tags that we generally use in RoboHelp. Only the most basic information is included - for anything else, see the <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML 
+tutorial</a>. You can test HTML yourself using the <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">editor</a> on the W3Schools website.</p>
+<hr />
+<h3 id="paragraph-and-line-break-p-and-br">Paragraph and Line Break - <code>&lt;p&gt;</code> and <code>&lt;br&gt;</code><a class="headerlink" href="#paragraph-and-line-break-p-and-br" title="Permanent link">&para;</a></h3>
+<p>The<code>&lt;p&gt;</code> tag defines a paragraph, which can contain as many sentences as you want.</p>
+<p>You can manually force part of a paragraph tag to start on the next line by using a line break tag (<code>&lt;br/&gt;</code>), but this is not recommended in our documentation. If you need a new paragraph, you should actually <strong>use</strong> a new paragraph.</p>
+<p>To insert a new paragraph in a visual editor like Word, you press Enter. To insert a new line break in a visual editor like Word, you press Shift+Enter. In general, the distance between two paragraphs is larger than the distance between two lines in the same paragraph.</p>
+<h4 id="example-simple-paragraph">Example - simple paragraph<a class="headerlink" href="#example-simple-paragraph" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>Output:</strong></p>
+<p>This is a paragraph.</p>
+<h4 id="example-paragraph-with-line-break">Example - paragraph with line break<a class="headerlink" href="#example-paragraph-with-line-break" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the first sentence of a paragraph. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> Because I added a line break manually, the second sentence will appear on the next row.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>Output:</strong></p>
+<p>This is the first sentence of a paragraph.<br />
+Because I added a line break manually, the second sentence will appear on the next row.</p>
+<h4 id="example-two-paragraphs">Example - two paragraphs<a class="headerlink" href="#example-two-paragraphs" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong></p>
+<p><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the first paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the second paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<strong>Output:</strong></p>
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.</p>
+<hr />
+<h3 id="headings-h1-h2-etc">Headings - <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> etc<a class="headerlink" href="#headings-h1-h2-etc" title="Permanent link">&para;</a></h3>
+<p>Six levels of headings can be used in HTML - from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. Heading 1 is the most important and, by default (without any CSS) it is displayed in the largest font.</p>
+<h4 id="example-heading">Example - heading<a class="headerlink" href="#example-heading" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>My heading 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>Output:</strong></p>
+<h2>My Heading 2</h2>
+
+<hr />
+<h3 id="division-section-div">Division (section) - <code>&lt;div&gt;</code><a class="headerlink" href="#division-section-div" title="Permanent link">&para;</a></h3>
+<p>The <code>&lt;div&gt;</code> tag defines a section (or <em>div</em>ision) of a page. A section can contain one or more paragraph and headings. It can be useful when you want to use CSS to set the same formatting for all the elements inside.</p>
+<h4 id="example-div">Example - div<a class="headerlink" href="#example-div" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>The heading of this section<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This section contains one paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h3 id="span-span">Span - <code>&lt;span&gt;</code><a class="headerlink" href="#span-span" title="Permanent link">&para;</a></h3>
+<p>The <code>&lt;span&gt;</code> tag is generally used to group a part of a paragraph so that formatting can be applied through CSS. A <code>&lt;span&gt;</code> by itself doesn't do anything.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In RoboHelp, if you are fixing formatting by running search &amp; replace, you may end up with a lot of empty <span> tags. They won't break anything and won't be visible in the output, but it's better to delete them to have cleaner, easier-to-follow code.</p>
+</div>
+<hr />
+<h3 id="lists-ol-ul-li">Lists - <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code><a class="headerlink" href="#lists-ol-ul-li" title="Permanent link">&para;</a></h3>
+<p>There are two types of lists:</p>
+<ul>
+<li>Ordered list (aka "numbered") - <code>&lt;ol&gt;</code></li>
+<li>Unordered list (aka "bulleted") - <code>&lt;ul&gt;</code></li>
+</ul>
+<p>Each step or item in a list is enclosed in <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tags.</p>
+<p>The "ordered" and "unordered" terms are the "most" correct - an ordered list is a list where the items follow a certain sequence, but it does not have to be numbered, it can also use <em>a, b, c</em> or <em>i, ii, iii</em>. The same goes for the unordered lists - they can use bullets, circles, arrows etc.</p>
+<p>By default, an ordered list is numbered starting with 1 and an unordered list has bullets. This default can be changed through CSS.</p>
+<h4 id="example-basic-ordered-list">Example - basic ordered list<a class="headerlink" href="#example-basic-ordered-list" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is the first step.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is the second step.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p><strong>Output:</strong></p>
+<ol>
+<li>This is the first step.</li>
+<li>This is the second step.</li>
+</ol>
+<h4 id="example-basic-unordered-list">Example - basic unordered list<a class="headerlink" href="#example-basic-unordered-list" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is an item.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is another item. /<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p><strong>Output:</strong></p>
+<ul>
+<li>This is an item.</li>
+<li>This is another item.</li>
+</ul>
+<p>You can force an ordered list to start from a number different from 1, <strong>but you should never do it</strong> in our documentation.</p>
+<h4 id="example-ordered-list-with-forced-start">Example - ordered list with forced start<a class="headerlink" href="#example-ordered-list-with-forced-start" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ol</span> <span class="na">start</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is step number 50.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is step number 51.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Step number 52, but you should not do this.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p><strong>Output:</strong></p>
+<ol>
+<li>
+<p>This is step number 50.</p>
+</li>
+<li>
+<p>This is step number 51.</p>
+</li>
+<li>
+<p>Step number 52, but you should not do this.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As you can see, you do not need paragraph tags for an HTML list to be valid. <strong>However, in RoboHelp is it best practice to add them.</strong> (The paragraph tag is represented in RoboHelp by the style Normal.) If the CSS definition of the paragraph style is different from the definition of the list items, then a list with Normal style will look different from a list without Normal style.</p>
+</div>
+<h4 id="example-ordered-and-unordered-lists-with-added-paragraphs">Example - ordered and unordered lists with added paragraphs<a class="headerlink" href="#example-ordered-and-unordered-lists-with-added-paragraphs" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the first step.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the second step.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is an item.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is another item.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>An item (<code>&lt;li&gt;</code>) can contain one or more paragraphs. This is commonly used in RoboHelp to ensure proper alignment for procedures.</p>
+<h4 id="example-list-item-with-several-paragraphs">Example - list item with several paragraphs<a class="headerlink" href="#example-list-item-with-several-paragraphs" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the first paragraph in the first step.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the second paragraph in the first step.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the second step.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h3 id="image-img">Image - <code>&lt;img&gt;</code><a class="headerlink" href="#image-img" title="Permanent link">&para;</a></h3>
+<p>The <code>&lt;img&gt;</code> tag is used to embed an image. You always need to use two attributes: <code>src</code> (the source of the image, its location) and <code>alt</code> (the description, displayed in case the image cannot be loaded).</p>
+<h4 id="example-img">Example - img<a class="headerlink" href="#example-img" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src </span><span class="o">=</span> <span class="s">&quot;cat.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;This is a cat image&quot;</span><span class="p">/&gt;</span>
+</code></pre></div>
+<p>By default, the image is displayed in full size. If you want, you can use the <code>width</code> and <code>height</code> attributes to resize it. You should avoid this. (On the other hand, RoboHelp automatically inserts the height and weight attributes and sets them to the full size of the image. Don't be surprised if you see them.)</p>
+<hr />
+<h3 id="address-link-a">Address (link) - <code>&lt;a&gt;</code><a class="headerlink" href="#address-link-a" title="Permanent link">&para;</a></h3>
+<p>The <code>&lt;a&gt;</code> tag is used to add a hyperlink. You always need to use the href attribute to specify the actual address.</p>
+<h4 id="example-link">Example - link<a class="headerlink" href="#example-link" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href </span><span class="o">=</span> <span class="s">&quot;www.example.com&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>You can specify how to open the linked page using the <code>target</code> attribute. For example, to open the page in a new tab you would use <code>_blank</code>.</p>
+<h4 id="example-link-opened-in-new-tab">Example - link opened in new tab<a class="headerlink" href="#example-link-opened-in-new-tab" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span> <span class="s">&quot;www.example.com&quot;</span> <span class="na">target </span><span class="o">=</span> <span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h3 id="table-table-th-td-tr">Table - <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;tr&gt;</code><a class="headerlink" href="#table-table-th-td-tr" title="Permanent link">&para;</a></h3>
+<p>The <code>&lt;table&gt;</code> tag is used to define a table, but several more tags are needed to have an actual table with rows and columns:</p>
+<ul>
+<li><code>&lt;tr&gt;</code> - defines the regular table rows.</li>
+<li><code>&lt;th&gt;</code> - defines the table header cells. <strong>Note</strong>: RoboHelp doesn't use
+                this when you insert a new table.</li>
+<li><code>&lt;td&gt;</code> - defines the regular table cells.</li>
+</ul>
+<h4 id="example-table">Example - table<a class="headerlink" href="#example-table" title="Permanent link">&para;</a></h4>
+<p><strong>HTML:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Header row, first column<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Header row, second column<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Second row, first column<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Second row, second column<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+</code></pre></div>
+<strong>Output:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Header row, first column</th>
+<th>Header row, second column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Second row, first column</td>
+<td>Second row, second column</td>
+</tr>
+</tbody>
+</table>
+<p>You can use the <code>colspan</code> and <code>rowspan</code> attributes for the <code>td</code> and <code>th</code> tags to create merged rows or columns (but it's easier to just do it from the RoboHelp Author view).</p>
+<hr />
+<h2 id="css-syntax">CSS Syntax<a class="headerlink" href="#css-syntax" title="Permanent link">&para;</a></h2>
+<p>CSS (Cascading Style Sheets) is used to indicate what HTML elements should look like. You can define the CSS inside an HTML document or use an external CSS file.</p>
+<hr />
+<h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<p>To associate a CSS style to an HTML tag, you need to use a syntax based on a selector and a declaration. The selector is the first part - the tag or class you want to apply the style to. The declaration is the style itself.</p>
+<p>The basic syntax is:</p>
+<p><code>tag {</code></p>
+<p><code>property:value;</code></p>
+<p><code>property:value;</code></p>
+<p><code>}</code></p>
+<p>Note that there is a semicolon after the last line as well.</p>
+<p>With this syntax, all the text that is inside the specified tag will be styled as indicated. In this example, all paragraphs will be in 18pt Arial font.</p>
+<h4 id="example-css-styling">Example - CSS styling<a class="headerlink" href="#example-css-styling" title="Permanent link">&para;</a></h4>
+<p><div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Arial</span><span class="p">;</span>
+
+<span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">pt</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+You can also use a more complicated selector, for example to say that you want paragraphs that use the class Body to have one style and paragraphs that use the class Note to have a different style.</p>
+<h4 id="example-css-classes">Example - CSS classes<a class="headerlink" href="#example-css-classes" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="p">.</span><span class="nc">Body</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Arial</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">pt</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="p">.</span><span class="nc">Note</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Verdana</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">pt</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<p>For other types of selectors, see the <a href="https://www.w3schools.com/css/css_syntax.asp">CSS Syntax and Selectors</a> page on W3Schools.</p>
+<hr />
+<h3 id="internal-style-sheet">Internal Style Sheet<a class="headerlink" href="#internal-style-sheet" title="Permanent link">&para;</a></h3>
+<p>To define an internal style sheet, you enter the CSS in the <code>&lt;head&gt;</code> of the page, inside the <code>&lt;style&gt;</code> tag.</p>
+<h4 id="example-internal-stylesheet">Example - internal stylesheet<a class="headerlink" href="#example-internal-stylesheet" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+<span class="w">       </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">pt</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h3 id="external-style-sheet">External Style Sheet<a class="headerlink" href="#external-style-sheet" title="Permanent link">&para;</a></h3>
+<p>To define an external style sheet, you enter the location of the CSS file in the <code>&lt;head&gt;</code> of
+            the page, inside the <code>&lt;link&gt;</code> tag.</p>
+<h4 id="example-external-stylesheet">Example - external stylesheet<a class="headerlink" href="#example-external-stylesheet" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;help_styles.css&quot;</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.wrap", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

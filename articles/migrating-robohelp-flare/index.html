@@ -1,0 +1,586 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ioana.work/articles/migrating-robohelp-flare/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>RoboHelp to Flare: Migration Steps and Troubleshooting - ioana @ work - a technical writing portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#importing-a-robohelp-project-and-creating-a-new-flare-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-header__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ioana @ work - a technical writing portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RoboHelp to Flare: Migration Steps and Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ioana @ work - a technical writing portfolio" class="md-nav__button md-logo" aria-label="ioana @ work - a technical writing portfolio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    ioana @ work - a technical writing portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ioana-st/ioana.work" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../portfolio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portfolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-a-robohelp-project-and-creating-a-new-flare-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing a RoboHelp project and creating a new Flare project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-import-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analyzing import errors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reimporting-fixed-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reimporting fixed topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-the-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking the import
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-the-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updating the project structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>RoboHelp to Flare: Migration Steps and Troubleshooting</h1>
+
+<p>This describes the basic process we used for migrating our documentation from RoboHelp to Flare. Beside from the obvious migration of the content, we also wanted to have a clean slate - get rid of all the inline formatting added in RoboHelp along the years and adapt to the Flare structure.</p>
+<h2 id="importing-a-robohelp-project-and-creating-a-new-flare-project">Importing a RoboHelp project and creating a new Flare project<a class="headerlink" href="#importing-a-robohelp-project-and-creating-a-new-flare-project" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In the <strong>File</strong> menu, select <strong>New Project &gt; RoboHelp Project</strong>.</li>
+<li>In the <strong>Open File</strong> window, navigate to the RH project and select the <code>xpj</code> file. Click <strong>OK</strong>.</li>
+<li>Click <strong>Next</strong>.</li>
+<li>Type the project name. This will be the name of the created folder and the name of the <code>flprj</code> file.</li>
+<li>Make sure the project folder is correct. This should be the parent folder inside which the new project folder will be created.
+   <img alt="Import Projet Wizard" src="../../assets/article-images/import_project_wizard.png" /></li>
+<li>Click <strong>Next</strong>.</li>
+<li>
+<p>Select both <strong>Convert all topics at once</strong> and <strong>Convert inline formatting to CSS styles</strong>.
+   <img alt="Convert all topics at once and Convert inline formatting to CSS styles options" src="../../assets/article-images/convert_css.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The second checkbox will create new styles in your CSS based on the inline formatting that <em>shouldn't</em> exist in RoboHelp, but for sure <em>does</em>. This way, you can then analyze all the new styles that are created and either replace them with standard styles or remove them.</p>
+<p>If you just want to import the HTML as it is in RH (inline formatting included), do not use <strong>Convert inline formatting to CSS styles</strong>.</p>
+</div>
+</li>
+<li>
+<p>(Optional) If you plan to use a spell checker for a language different from English (US), click <strong>Next</strong> and select the language.</p>
+</li>
+<li>Click <strong>Finish</strong>. The import process starts.</li>
+<li>If errors occur during the import, Flare notifies you when it completes the process. It is recommended to save the log by clicking <strong>Save Log</strong> on the <strong>Import Progress</strong> window.
+   <img alt="Import warning" src="../../assets/article-images/import_warning.png" /></li>
+</ol>
+<hr />
+<h2 id="analyzing-import-errors">Analyzing import errors<a class="headerlink" href="#analyzing-import-errors" title="Permanent link">&para;</a></h2>
+<p>If you saved the log when you finished the import, you can open it from <strong>Project Organizer &gt; Reports</strong>. The <strong>Errors</strong> tab lists all topics that could not be properly imported.</p>
+<ol>
+<li>Search for the file in the <strong>Content Explorer</strong>. You can use the <strong>Filter</strong> field (don't forget to add asterisks).</li>
+<li>Right-click the topic and select <strong>Open With</strong>, then select a text editor such as Notepad++.</li>
+<li>
+<p>Go to the line indicated in the error and try to see what the problem is. 
+   <img alt="Identify topics imported with errors" src="../../assets/article-images/find_import_error.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the problems are related to dropdowns from RoboHelp not converting to togglers in Flare. Troubleshooting is not easy, since the wrong HTML is not at all obvious, so a "divide et impera" approach works best: split the topic into 2 and try to import each half separately; once you identify the half with the problem, divide it in 2 again, and so on until you narrow the problem down enough.</p>
+</div>
+</li>
+<li>
+<p>Fix the problem in RH.</p>
+</li>
+</ol>
+<h2 id="reimporting-fixed-topics">Reimporting fixed topics<a class="headerlink" href="#reimporting-fixed-topics" title="Permanent link">&para;</a></h2>
+<p>After you have fixed the error in RH, reimport the file so that Flare can convert it to its format.</p>
+<ol>
+<li>
+<p>From the <strong>Content Explorer</strong>, delete the topic that you want to replace. In the <strong>Link Update</strong> window that is displayed, select <strong>Do Not Remove Links</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Keep in mind that if you <em>do</em> choose to remove the links, Flare only removes the <code>&lt;a href&gt;</code> part. This means that <code>Click &lt;a href="parameters.htm"&gt;Parameter Descriptions&lt;/a&gt; for more information</code> becomes <code>Click Parameter Descriptions for more information</code>, with no link... which is obviously unhelpful (and won't show up in any reports, so it will be impossible to find and fix).</p>
+<p>...And anyway, you want to keep the links, because you are only deleting the topic temporarily. Once you reimport it, the links will start working again.</p>
+</div>
+</li>
+<li>
+<p>On the <strong>Project</strong> ribbon tab, select <strong>Import &gt; HTML File Set</strong>.</p>
+</li>
+<li>Use the default option, <strong>Import into this Project</strong>, and click <strong>Next</strong>.</li>
+<li>Click the green <strong>+</strong> icon, navigate to the RH source project and select the file to be reimported.</li>
+<li>Clear the <strong>Link generated files to source files</strong> check box and click <strong>Next</strong>.
+   <img alt="Reimport file" src="../../assets/article-images/reimport.png" /></li>
+<li>Select the <strong>Import to folder</strong> option and add the path to the folder where the topic was initially imported.</li>
+<li>Select the <strong>Import resources</strong> option (<strong>Keep existing structure</strong> should be selected by default; if not, select that also). 
+   <img alt="Select folder and import resources" src="../../assets/article-images/import_folder_resources.png" /></li>
+<li>Click <strong>Finish</strong>.</li>
+<li>Flare displays a report of the imported files, including any resources, such as images. If they look OK, click <strong>Accept</strong>. The CSS is not applied, so the file will look a bit weird, but that's not a problem.
+   <img alt="Imported files report" src="../../assets/article-images/accept_import.png" /></li>
+<li>Flare turns every newly imported file into a new TOC. In the <strong>Project Organizer</strong>, check the <strong>TOC</strong> folder and delete any extraneous TOCs (only keep the original one from RoboHelp).</li>
+<li>Flare also creates some import files. In the <strong>Project Organizer</strong>, check the <strong>Imports</strong> folder and delete the entries.</li>
+</ol>
+<hr />
+<h2 id="checking-the-import">Checking the import<a class="headerlink" href="#checking-the-import" title="Permanent link">&para;</a></h2>
+<p>Some issues may appear after the import. You can use the <strong>File Issues</strong> report to find them:</p>
+<ol>
+<li>On the <strong>Analysis</strong> ribbon tab, click <strong>File Issues</strong>.</li>
+<li>Set <strong>By Target = HTML5</strong>. Note that in a larger module, this will freeze Flare for a while. Just wait a bit and the report will load.
+   <img alt="File issues viewer" src="../../assets/article-images/file_issues_viewer.png" /></li>
+<li>
+<p>Review the broken links, in particular: </p>
+<p>a. Double-click the <strong>Broken Links</strong> line. The <strong>Broken Links</strong> report opens.</p>
+<p>b. Right-click a link and select <strong>Fix Broken Links</strong>.</p>
+<p>c. Click the button in the upper left corner to let Flare search for matching files. In most cases it find find the correct file and you can just click <strong>Apply</strong>. </p>
+</li>
+</ol>
+<hr />
+<h2 id="updating-the-project-structure">Updating the project structure<a class="headerlink" href="#updating-the-project-structure" title="Permanent link">&para;</a></h2>
+<p>When you import a project from RH, it maintains the structure it had in RH. It's best practice to then manually adapt that to the folder structure that Flare creates by default.
+Go into the <strong>Content Explorer</strong>, create the folders as described in the documentation standards and move each type of resource into its dedicated folder. If you are prompted to update links, do it. </p>
+<p><img alt="Folder structure" src="../../assets/article-images/folder_structure.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you update the project structure, the ability to simultaneously move several files from one folder to another can be very helpful. To do that, on the <strong>Content Explorer</strong> toolbar, click the second button from the left, namely <strong>Toggle Show Files</strong> (not the arrow next to it!).
+This splits the Content Explorer in two vertical panes, allowing you to select multiple files on the right and move them to a target folder on the left. The <strong>Link Update</strong> window includes all applicable files, which means that you only need to click <strong>Update Links</strong> once for all the files you are trying to move.</p>
+<p><img alt="Toggle show files" src="../../assets/article-images/toggle_show_files.png" /></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.wrap", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
