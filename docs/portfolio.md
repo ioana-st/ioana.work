@@ -25,6 +25,28 @@ hide:
 
 </div>
 
+# Meta
+
+<div class="grid cards" markdown>
+
+-   ## 💻 Building this Website
+
+    Blog article about building this portfolio.
+
+    [:octicons-arrow-right-24: **Link**](portfolio/meta-build-site.md)
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   ## ✍️ Introduction to Technical Writing
+
+    Commissioned article for [Archbee](https://www.archbee.com/). Light editing and some of the graphic design done by the Archbee team.
+
+    [:octicons-arrow-right-24: **Live version**](https://www.archbee.com/books/technical-writing) | [:octicons-download-24: **Download (PDF)**](portfolio/archbee-technical-writing-playbook.pdf)
+
+</div>
+
 # Onboarding
 <div class="grid cards" markdown>
 

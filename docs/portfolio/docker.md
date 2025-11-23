@@ -45,7 +45,7 @@ Before running Docker containers on a machine, you must install the following:
 
 To start Docker containers, the Docker images must first be on your hard drive and recognized by the Docker Engine.
 
-You can see the list of available images in the [official repository](https://registry.company.ad/orgs/fake-product/repos).
+You can see the list of available images in the official repository.
 
 To get an image, you can either:
 
@@ -150,7 +150,7 @@ For more information about Docker Compose, see the [official documentation](http
 
 ## Docker Compose File Structure
 
-This table explains the structure of the `docker-compose.yml` file from a FakeProduct point of view. For official and generic information, see the [Docker Compose documentation](link-to-docker-compose-docs).
+This table explains the structure of the `docker-compose.yml` file from a FakeProduct point of view. For official and generic information, see the Docker Compose documentation.
 
 | Docker Compose Parameter | Explanation |
 | :--- | :--- |
